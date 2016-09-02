@@ -1,0 +1,2 @@
+# blindstock
+BlindStock eCommerce Website
