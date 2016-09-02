@@ -1,0 +1,1 @@
+$(window).scroll(function(){$(this).scrollTop()?$("#nav-welcome").addClass("sticky"):$("#nav-welcome").removeClass("sticky")});

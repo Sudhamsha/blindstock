@@ -1,0 +1,25 @@
+<div class="parallax-slide">
+<div class="swiper-container" data-autoplay="5000" data-loop="1" data-speed="500" data-center="0" data-slides-per-view="1">
+    <div class="swiper-wrapper">
+       {exp:channel:entries channel="homepage_slider" limit="1" dynamic="no" disable="categories|category_fields|member_data"}
+       {slider_images}
+        <div class="swiper-slide active" data-val="0" style="background-image: url({slider_images:image});"> 
+            <div class="parallax-vertical-align">
+                <div class="parallax-article">
+                    {if slider_images}<h2 class="subtitle">{slider_images:top_text}</h2>{/if}
+                    <h1 class="title">{slider_images:big_text}</h1>
+                    {if slider_images:bottom_text}<div class="description">{slider_images:bottom_text}</div>{/if}
+                    <div class="info">
+                        {if slider_images:button_1_text}<a href="{slider_images:button_1_link}" target="_blank" class="button style-8">{slider_images:button_1_text}</a>{/if}
+                        {if slider_images:button_2_text}<a href="{slider_images:button_2_link}" class="button style-8">{slider_images:button_2_text}</a>{/if}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {/slider_images}
+        {/exp:channel:entries}
+        
+    </div>
+    <div class="pagination"></div>
+</div>
+</div>

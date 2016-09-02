@@ -1,0 +1,20 @@
+<div class="row nopadding">
+    {exp:channel:entries channel="homepage_featured_panel" limit="1" disable="categories|category_fields|member_data"}
+    {panels}
+    <div class="col-sm-4 nopadding creative-square-box">
+        <div class="background-box" style="background-image: url({panels:image});"></div>
+        <div class="cell-view">
+            <div class="parallax-article">
+                {if panels:top_text}<h2 class="subtitle">{panels:top_text}</h2>{/if}
+                <h1 class="title">{panels:main_text}</h1>
+                {if panels:description}<div class="description">{panels:description}</div>{/if}
+                <div class="info">
+                    <a href="{panels:button_link}" class="button style-8">{panels:button_text}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {/panels}
+    {/exp:channel:entries}
+
+</div>

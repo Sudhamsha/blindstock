@@ -1,0 +1,82 @@
+{exp:channel:entries channel="special_page" limit="1" disable="categories|category_fields|member_data"}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->	
+{sn:global_html-header}
+<body class="style-10">
+
+    <!-- LOADER -->
+    <div id="loader-wrapper">
+        <div class="bubbles">
+            <div class="title">loading</div>
+            <span></span>
+            <span id="bubble2"></span>
+            <span id="bubble3"></span>
+        </div>
+    </div>
+
+    <div id="content-block">
+
+        <div class="content-center fixed-header-margin">
+             <!-- HEADER -->
+            {sn:global_header}
+
+        <div class="content-push">
+
+                <div class="breadcrumb-box">
+                    {exp:structure:breadcrumb here_as_title="yes"}
+                </div>
+
+                <div class="information-blocks">
+                    {if main_image}<img class="project-thumbnail" src="{main_image}" alt="{title}">{/if}
+                    <div class="row">
+                        <div class="col-md-4 information-entry">
+                            <div class="article-container style-1">
+                                {panel_1}
+                                    <h2>{panel_1:title}</h2>
+                                    {panel_1:description}
+                                {/panel_1}
+                            </div>
+                        </div>
+                        <div class="col-md-4 information-entry">
+                            <h3 class="block-title">{panel_2_title}</h3>
+                            {panel_2_list}
+                            <div class="article-container style-1">
+                                <h5>{panel_2_list:title}</h5>
+                                <p>{panel_2_list:short_description}</p>
+                            </div>
+                            {/panel_2_list}
+                        </div>
+                        <div class="col-md-4 information-entry">
+                            <div class="accordeon">
+                                {panel_3}
+                                <div class="accordeon-title">{panel_3:title} {if panel_3:is_popular == 'Yes'}<span class="inline-label red">popular</span>{/if}</div>
+                                <div class="accordeon-entry" style="display: none;">
+                                    <div class="article-container style-1">
+                                        {panel_3:description}
+                                    </div>
+                                </div>
+                                {/panel_3}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+                
+               
+                <!-- FOOTER -->
+        {sn:global_footer}
+
+        {sn:global_search}
+        
+        {sn:global_cart}
+         
+        {sn:global_html-footer}
+</body>
+</html>
+{/exp:channel:entries}

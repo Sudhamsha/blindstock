@@ -1,0 +1,77 @@
+{exp:channel:entries channel="standard_text" limit="1" disable="categories|category_fields|member_data"}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->	
+{sn:global_html-header}
+<body class="style-10">
+
+    <!-- LOADER -->
+    <div id="loader-wrapper">
+        <div class="bubbles">
+            <div class="title">loading</div>
+            <span></span>
+            <span id="bubble2"></span>
+            <span id="bubble3"></span>
+        </div>
+    </div>
+
+    <div id="content-block">
+
+        <div class="content-center fixed-header-margin">
+             <!-- HEADER -->
+            {sn:global_header}
+
+            <div class="content-push">
+
+                <div class="breadcrumb-box">
+                    {exp:structure:breadcrumb here_as_title="yes"}
+                </div>
+
+                <div class="information-blocks" style="margin-bottom: 0px;">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="blog-landing-box type-1 detail-post">
+                                <div class="blog-entry">
+                                    <div class="content">
+                                        <h1 class="title">{title}</h1>
+                                        <div class="article-container style-1">
+                                            {description}
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            
+                                </div>
+                        </div>
+                    </div>
+                </div>
+           {/exp:channel:entries} 
+            <div class="information-blocks">
+            {exp:cartthrob:checkout_form 
+ 		return="{template_group}/{template}/order_complete" use_bootstrap="true"}
+		
+		{!-- The gateway_fields template variable to output fields required by your currently selected gateway 
+			what you see on the front end changes based on the gateway's requirements.--}
+		{gateway_fields}
+		<br />
+		<input class="button style-4" type="submit" value="Checkout" />
+        {/exp:cartthrob:checkout_form}
+            </div>
+            <div class="clear"></div>
+            </div>
+
+    </div>
+                
+               
+                <!-- FOOTER -->
+        {sn:global_footer}
+
+        {sn:global_search}
+        
+        {sn:global_cart}
+         
+        {sn:global_html-footer}
+</body>
+</html>

@@ -1,0 +1,110 @@
+{exp:channel:entries channel="standard_text" limit="1"}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->	
+{sn:global_html-header}
+<body class="style-10">
+
+    <!-- LOADER -->
+    <div id="loader-wrapper">
+        <div class="bubbles">
+            <div class="title">loading</div>
+            <span></span>
+            <span id="bubble2"></span>
+            <span id="bubble3"></span>
+        </div>
+    </div>
+
+    <div id="content-block">
+
+        <div class="content-center fixed-header-margin">
+            <!-- HEADER -->
+            {sn:global_header}
+
+             <div class="content-push">
+
+                <div class="breadcrumb-box">
+                   {exp:structure:breadcrumb here_as_title="yes"}    
+                </div>
+       {/exp:channel:entries}
+                <div class="information-blocks">
+                    <div class="row">
+                        <div class="col-sm-9 information-entry">
+                            <h3 class="cart-column-title size-1">Cart</h3>
+                            
+                            {exp:cartthrob:cart_empty_redirect  return="{site_url}products"  }
+                            
+                            {exp:cartthrob:update_cart_form  class="form-horizontal" id="update_cart_form" return="{template_group}/{template}"}
+                            {exp:cartthrob:cart_items_info}
+                        
+                            <div class="traditional-cart-entry style-1">
+                                <a class="image" href="{site_url}products/{url_title}">
+                                    {embed="shop/thumb" entry_id="{entry_id}"}
+                                    
+                               
+                                </a>
+                                <div class="content">
+                                    <div class="cell-view">
+                                        <a class="title" href="{site_url}products/{url_title}">{title}</a>
+                                        <div class="inline-description"><strong>Size</strong>: {item_options:item_dimensions_1}</div>
+                                        
+                                        <div class="price">
+                                            <div class="current">{item_subtotal} <span style="color: #696971; font-size: 12px; font-weight: 100;">({price} x {quantity})</span></div>
+                                        </div>
+                                        <div class="quantity-selector detail-info-entry">
+                                            <div class="detail-info-entry-title">Quantity</div>
+                                            
+                                            <input class="entry number" name="quantity[{row_id}]" value="{quantity}" style="margin-right: 5px;"/>
+                                            
+                                            <div class="inline-description" style="float: right; margin-top: 5px">remove? <input type="checkbox" id="delete_this_{row_id}" value="yes" name="delete[{row_id}]"></div> 
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            {/exp:cartthrob:cart_items_info}
+                            
+                            <button value="cart" name="return" class="button style-15" style="float: right;margin-bottom: 15px;">Update Cart</a>
+                            {/exp:cartthrob:update_cart_form}		
+                        </div>
+                        <div class="col-sm-3 information-entry">
+                            <h3 class="cart-column-title size-1" style="text-align: center;">Subtotal</h3>
+                            {exp:cartthrob:cart_items_info limit="1"}
+                            <div class="sidebar-subtotal">
+                                <div class="price-data">
+                                    <div class="main">{cart_subtotal}</div>
+                                    <div class="title">Excluding tax &amp; shipping</div>
+                                    <div class="subtitle">ORDERS WILL BE PROCESSED IN POUNDS</div>
+                                </div>
+                                <div class="additional-data">
+                                    <a href="{site_url}checkout" class="button style-10">Checkout</a>
+                                </div>
+                            </div>
+                            {/exp:cartthrob:cart_items_info}
+                        </div>
+                    </div>
+                </div>
+
+             </div>
+
+        </div>
+        <div class="clear"></div>
+
+    </div>
+    
+  
+        
+        
+        <!-- FOOTER -->
+        {sn:global_footer}
+
+        {sn:global_search}
+    
+        {sn:global_cart}
+         
+        {sn:global_html-footer}
+        

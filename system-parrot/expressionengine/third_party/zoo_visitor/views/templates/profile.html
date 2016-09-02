@@ -1,0 +1,56 @@
+{embed="zoo_visitor_example/menu"}
+<h2>Account - Profile</h2>
+{if logged_in AND segment_3 == "success"}
+<h3>Profile updated</h3>
+{if:elseif logged_in}
+<h3>Edit profile</h3>
+
+
+{exp:zoo_visitor:update_form return="zoo_visitor_example/profile/success"}
+<fieldset>
+	<p>
+		<label for="member_firstname">{label:member_firstname}</label>
+		<input type="text" name="member_firstname" id="member_firstname" value="{if member_firstname}{member_firstname}{/if}"/>
+	</p>
+
+	<p>
+		<label for="member_lastname">{label:member_lastname}</label>
+		<input type="text" name="member_lastname" id="member_lastname" value="{if member_lastname}{member_lastname}{/if}"/>
+	</p>
+
+	<p>
+		<label for="member_birthday">{label:member_birthday}</label>
+		<input type="text" name="member_birthday" id="member_birthday" value="{member_birthday}" maxlength="23" size="25"/>
+	</p>
+
+	<p>
+		<label for="member_gender">{label:member_gender}</label>
+		{options:member_gender}
+		<input type="radio" id="member_gender" name="member_gender" value="{option_value}"{checked} />{option_value}
+		{/options:member_gender}
+	</p>
+
+</fieldset>
+<br/>
+<fieldset>
+	<legend>Native member field</legend>
+	<p>Native member fields like location, url, signature, etc... can be handled by creating a channel field with the same name prefixed with "_member"
+		For example member_signature will sync to the signature field. Custom member fields can be handled in the same way. Just create a channel field prefixed with "member_" and the value
+		will also be saved to the profile.</p>
+
+	<p>
+		<label for="member_signature">Native member signature</label>
+		<input type="text" name="member_signature" id="member_signature" value="{if member_signature}{member_signature}{/if}"/>
+	</p>
+
+</fieldset>
+
+<p>
+	<input type="hidden" name="title" value="{username}">
+	<input type="submit" value="Submit" class="button"/>
+</p>
+
+{/exp:zoo_visitor:update_form}
+{if:else}
+You are not logged in. <a href="{path=zoo_visitor_example/login}">Login</a> now.
+{/if}

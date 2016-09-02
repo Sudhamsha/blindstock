@@ -1,0 +1,31 @@
+
+
+.registration .nav-tabs,
+.profile .nav-tabs{
+	margin-bottom: 20px;
+}
+
+.registration .nav-tabs li a,
+.profile .nav-tabs li a{
+	font-size: 26px;
+}
+
+.bg-warning{
+	padding: 15px;
+}
+
+.registration ul{
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+.registration .error{
+	margin: 0;
+	padding: 5px 15px;
+	list-style-position: inside;
+}
+
+/* 3rd Party */
+.TaggerField .TagBox h4{
+	height: 24px;
+}

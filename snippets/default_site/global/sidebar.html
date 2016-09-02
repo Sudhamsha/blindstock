@@ -1,0 +1,311 @@
+<aside id="standard-sidebar" style="padding-right: 10px">
+	
+	{!-- Candidates Help--}
+	{if logged_in && group_id == '6' && segment_1 == "candidate-help"}
+
+		<div class="sidebar-module job-listing lightest_grey">
+
+			<header>
+				<h4>Help</h4>
+			</header>
+
+			<div class="job_body">
+				<ul>
+					<li>
+						<a href="#" {if segment_1 == "" && segment_2 ==""} class="active-state"{/if}>
+							Help Page
+							<div class="area">
+								<i class="icon-right-circle"></i>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	{!-- Employers Help --}
+	{if:elseif logged_in && group_id == '7' && segment_1 == "employer-help"}
+
+		<div class="sidebar-module job-listing lightest_grey">
+
+			<header>
+				<h4>Help</h4>
+			</header>
+
+			<div class="job_body">
+				<ul>
+					<li>
+						<a href="#" {if segment_1 == "" && segment_2 ==""} class="active-state"{/if}>
+							Help Page
+							<div class="area">
+								<i class="icon-right-circle"></i>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+
+	{/if}
+
+	{if segment_1 == "why-northern-ireland"}
+
+		<div class="sidebar-module job-listing lightest_grey">
+
+			<header>
+				<h4>Reasons</h4>
+			</header>
+
+			<div class="job_body">
+				<ul>
+					<li>
+						<a href="/why-northern-ireland/" {if segment_1 == "why-northern-ireland" && segment_2 ==""} class="active-state"{/if}>
+							Why Northern Ireland?
+							<div class="area">
+								<i class="icon-right-circle"></i>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="/why-northern-ireland/job-opportunities" {if segment_2 == "job-opportunities"} class="active-state"{/if}>
+							Job Opportunities
+							<div class="area">
+								<i class="icon-right-circle"></i>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="/why-northern-ireland/cost-of-living" {if segment_2 == "cost-of-living"} class="active-state"{/if}>
+							Cost Of living
+							<div class="area">
+								
+								<i class="icon-right-circle"></i>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="/why-northern-ireland/lifestyle" {if segment_2 == "lifestyle"} class="active-state"{/if}>
+							Lifestyle
+							<div class="area">
+								<i class="icon-right-circle"></i>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="/why-northern-ireland/eating-out" {if segment_2 == "eating-out"} class="active-state"{/if}>
+							Eating Out
+							<div class="area">
+								<i class="icon-right-circle"></i>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="/why-northern-ireland/socialising" {if segment_2 == "socialising"} class="active-state"{/if}>
+							Socialising
+							<div class="area">
+								<i class="icon-right-circle"></i>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="/why-northern-ireland/sports" {if segment_2 == "sports"} class="active-state"{/if}>
+							Sports
+							<div class="area">
+								<i class="icon-right-circle"></i>
+							</div>
+						</a>
+					</li> 
+					<li>
+						<a href="/why-northern-ireland/travel"{if segment_2 == "travel"} class="active-state"{/if}>
+							Travel
+							<div class="area">
+								<i class="icon-right-circle"></i>
+							</div>
+						</a>
+					</li> 
+					<li>
+						<a href="/why-northern-ireland/culture" {if segment_2 == "culture"} class="active-state"{/if}>
+							Culture
+							<div class="area">
+								<i class="icon-right-circle"></i>
+							</div>
+						</a>
+					</li> 
+					<li>
+						<a href="/why-northern-ireland/tv-movies" {if segment_2 == "tv-movies"} class="active-state"{/if}>
+							TV &amp; Movies
+							<div class="area">
+								<i class="icon-right-circle"></i>
+							</div>
+						</a>
+					</li> 
+					<li>
+						<a href="/why-northern-ireland/retail" {if segment_2 == "retail"} class="active-state"{/if}>
+							Retail
+							<div class="area">
+								<i class="icon-right-circle"></i>
+							</div>
+						</a>
+					</li> 
+					<li>
+						<a href="/why-northern-ireland/education" {if segment_2 == "education"} class="active-state"{/if}>
+							Education
+							<div class="area">
+								<i class="icon-right-circle"></i>
+							</div>
+						</a>
+					</li> 
+					<li>
+						<a href="/why-northern-ireland/healthcare" {if segment_2 == "healthcare"} class="active-state"{/if}>
+							Healthcare
+							<div class="area">
+								<i class="icon-right-circle"></i>
+							</div>
+						</a>
+					</li> 
+				</ul>
+			</div>
+		</div>
+
+	{if:else}
+		{if segment_2 == "job-search" || segment_2 == "job-profile-match"}
+			<div class="sidebar-module lightest_grey">
+				<header>
+					<h4>Search</h4>
+				</header>
+					{exp:search:simple_form channel="job" search_in="entries" form_id="standard_search" result_page="jobs/search" no_result_page="jobs/search-noresults"}
+						<fieldset>
+							<input type="search" name="keywords" placeholder="Search here.."/>
+							<input type="submit" name="submit" value="Go"/>
+						</fieldset>
+					{/exp:search:simple_form}
+{!-- 
+					{exp:search:simple_form search_in="entries" channel="job" form_id="advanced_search"}
+					<fieldset>
+						<legend>
+							<a href="javascript:void(0)">
+								Advanced search
+							</a>
+						</legend>
+						<div>
+							<input type="search" name="search" placeholder="Advanced Search field.."/>
+							<input type="search" name="search" placeholder="Advanced Search field.."/>
+							<input type="search" name="search" placeholder="Advanced Search field.."/>
+							<input type="search" name="search" placeholder="Advanced Search field.."/>
+							<input type="submit" name="submit" value="Go"/>
+						</div>
+					</fieldset>
+				</form> --}
+			</div>
+		{/if}
+
+		<div class="sidebar-module lightest_grey">
+
+			<header>
+				<h4>Latest Jobs</h4>
+			</header>
+
+			<div class="job_body">
+
+				<ul>
+					{exp:channel:entries channel="job" limit="6" dynamic="off" disable="member_data"}
+
+					<li>
+						<a href="{page_url}">
+							{exp:eehive_hacksaw chars="40" append="..."}
+								{title}
+							{/exp:eehive_hacksaw}
+							<div class="area">
+								<i class="icon-right-circle"></i>
+							</div>
+						</a>
+					</li>
+
+					{/exp:channel:entries}	
+				</ul>
+
+			</div>
+
+		</div>
+
+	{/if}
+
+	<div class="sidebar-module glossary-sidebar">
+		<header>
+			<h4><a href="/employers-a-z">A-Z Companies</a></h4>
+		</header>
+		{!-- <div class="a_z">
+			<table>
+				<tr>
+				    <td class="selected"><a href="#">A</a></td>
+				    <td><a href="#">B</a></td>
+				    <td><a href="#">C</a></td>
+				    <td><a href="#">D</a></td>
+				    <td><a href="#">E</a></td>
+				    <td><a href="#">F</a></td>
+				    <td><a href="#">G</a></td>
+				</tr>
+			  	<tr>
+				    <td><a href="#">H</a></td>
+				    <td><a href="#">I</a></td>
+				    <td><a href="#">J</a></td>
+				    <td><a href="#">K</a></td>
+				    <td><a href="#">L</a></td>
+				    <td><a href="#">M</a></td>
+				    <td><a href="#">N</a></td>
+				</tr>
+				<tr>
+				    <td><a href="#">O</a></td>
+				    <td><a href="#">P</a></td>
+				    <td><a href="#">Q</a></td>
+				    <td><a href="#">R</a></td>
+				    <td><a href="#">S</a></td>
+				    <td><a href="#">T</a></td>
+				    <td><a href="#">U</a></td>
+				</tr>
+				<tr>
+				    <td><a href="#">V</a></td>
+				    <td><a href="#">W</a></td>
+				    <td><a href="#">X</a></td>
+				    <td><a href="#">Y</a></td>
+				    <td><a href="#">Z</a></td>
+				    <td><a href="#"></a></td>
+				    <td><a href="#"></a></td>
+				</tr>
+			</table>
+		</div> --}
+	</div>
+
+	<div id="social-module">
+
+		<div>
+			<a href="https://www.facebook.com/IT3Sixty">
+				<i class="icon-facebook-squared"></i>
+				<p>Like us on
+					<span>Facebook</span>
+				</p>
+			</a>
+		</div>
+
+		<div>
+			<a href="https://twitter.com/@IT3Sixty_NI">
+				<i class="icon-twitter-squared"></i>
+				<p>Follow us on
+					<span>Twitter</span>
+				</p>
+			</a>
+		</div>
+
+		<div>
+			<a href="http://linkd.in/1Ftuvzw">
+				<i class="icon-linkedin-squared"></i>
+				<p>Connect @ 
+					<span>Linked In</span>
+				</p>
+			</a>
+		</div>
+
+	</div>
+	
+</aside>

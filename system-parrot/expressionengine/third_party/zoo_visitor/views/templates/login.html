@@ -1,0 +1,24 @@
+{embed="zoo_visitor_example/menu"}
+{if logged_in}
+	You are already registered and logged in. <a href="{path=logout}">Logout</a> or go to your <a href="{path=zoo_visitor_example/profile}">profile</a>.
+{if:else}
+	{exp:zoo_visitor:login_form return="zoo_visitor_example/profile"}
+		<p>
+			<label for="email">Email:</label>
+			<input type="text" name="username" id="username" />
+		</p>
+		<p>
+			<label for="password">Password:</label>
+			<input type="password" name="password" id="password" />
+		</p>
+		
+		{if auto_login}
+		<p>
+			<label for="remember_me">Remember me?</label>
+			<input class='checkbox' type='checkbox' name='auto_login' value='1'  />
+		</p>
+		{/if}
+		
+		<input type="submit" name="submit" value="Log in" />
+	{/exp:zoo_visitor:login_form}
+{/if}

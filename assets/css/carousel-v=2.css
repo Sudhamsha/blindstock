@@ -1,0 +1,256 @@
+/*
+****************************************************************
+SHOWREEL CAROUSEL
+****************************************************************
+
+*/
+
+
+.jcarousel-skin-showreel .jcarousel-container {
+
+}
+
+.jcarousel-skin-showreel .jcarousel-direction-rtl {
+	direction: rtl;
+}
+
+.jcarousel-skin-showreel .jcarousel-container-horizontal {
+    width:100%;
+    padding: 0 ;
+}
+
+.jcarousel-skin-showreel .jcarousel-clip-horizontal {
+    width: 100%;
+    height: 500px;
+}
+
+
+.jcarousel-skin-showreel .jcarousel-item {
+    width: 930px;
+    height:auto;
+}
+
+.jcarousel-skin-showreel .jcarousel-item-horizontal {
+	margin-left: 0;
+    margin-right: 0;
+}
+
+.jcarousel-skin-showreel .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 10px;
+    margin-right: 0;
+}
+
+
+
+.jcarousel-skin-showreel .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+/**
+ *  Horizontal Buttons
+ */
+.jcarousel-skin-showreel .jcarousel-next-horizontal {
+    /*position: absolute;
+    top: 220px;
+    right: -57px;
+    width: 57px;
+    height: 57px;
+    cursor: pointer;
+    background: url(../images/showreel-next.gif) no-repeat top left;
+	z-index:9999 !important;*/
+	display:none;
+}
+
+.jcarousel-skin-showreel .jcarousel-direction-rtl .jcarousel-next-horizontal {
+    left: 5px;
+    right: auto;
+    background-image: url(../images/showreel-next.gif);
+}
+
+.jcarousel-skin-showreel .jcarousel-next-horizontal:hover {
+    background-position: bottom left;
+}
+
+.jcarousel-skin-showreel .jcarousel-next-horizontal:active {
+    background-position: top left;
+}
+
+.jcarousel-skin-showreel .jcarousel-next-disabled-horizontal,
+.jcarousel-skin-showreel .jcarousel-next-disabled-horizontal:hover,
+.jcarousel-skin-showreel .jcarousel-next-disabled-horizontal:active {
+    cursor: default;
+    background-position: bottom left;
+}
+
+.jcarousel-skin-showreel .jcarousel-prev-horizontal {
+ /*   position: absolute;
+    top: 220px;
+    left:-56px;
+    width: 57px;
+    height: 57px;
+    cursor: pointer;
+    background: url(../images/showreel-prev.gif) no-repeat top left;
+	z-index:9999 !important;*/
+display:none;
+}
+
+.jcarousel-skin-showreel .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+    left: auto;
+    right: 5px;
+    background-image: url(../images/showreel-prev.gif);
+}
+
+.jcarousel-skin-showreel .jcarousel-prev-horizontal:hover {
+    background-position: bottom left;
+}
+
+.jcarousel-skin-showreel .jcarousel-prev-horizontal:active {
+    background-position: bottom left;
+}
+
+.jcarousel-skin-showreel .jcarousel-prev-disabled-horizontal,
+.jcarousel-skin-showreel .jcarousel-prev-disabled-horizontal:hover,
+.jcarousel-skin-showreel .jcarousel-prev-disabled-horizontal:active {
+    cursor: default;
+    background-position: bottom left;
+}
+
+
+
+
+
+
+
+/*
+****************************************************************
+CLIENT CAROUSEL
+****************************************************************
+
+*/
+
+
+.jcarousel-skin-clients .jcarousel-container {
+
+}
+
+.jcarousel-skin-clients .jcarousel-direction-rtl {
+	direction: rtl;
+}
+
+.jcarousel-skin-clients .jcarousel-container-horizontal {
+    width: 870px;
+    padding: 0 30px 0 30px ;
+}
+
+.jcarousel-skin-clients .jcarousel-container-vertical {
+    width: 190px;
+    height: 80x;
+    padding: 20px 40px;
+}
+
+.jcarousel-skin-clients .jcarousel-clip-horizontal {
+    width:  870px;
+    height: auto;
+}
+
+.jcarousel-skin-clients .jcarousel-clip-vertical {
+    width:  75px;
+    height: 245px;
+}
+
+.jcarousel-skin-clients .jcarousel-item {
+    width: 174px;
+    height:auto;
+}
+
+.jcarousel-skin-clients .jcarousel-item-horizontal {
+	margin-left: 0;
+}
+
+.jcarousel-skin-clients .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 10px;
+    margin-right: 0;
+}
+
+.jcarousel-skin-clients .jcarousel-item-vertical {
+    margin-bottom: 10px;
+}
+
+.jcarousel-skin-clients .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+/**
+ *  Horizontal Buttons
+ */
+.jcarousel-skin-clients .jcarousel-next-horizontal {
+    position: absolute;
+    top: -8px;
+    right: 0px;
+    width: 11px;
+    height: 100px;
+    cursor: pointer;
+    background: url(../images/carousel-client-next.gif) no-repeat center left;
+}
+
+.jcarousel-skin-clients .jcarousel-direction-rtl .jcarousel-next-horizontal {
+    left: 5px;
+    right: auto;
+    background-image: url(../images/carousel-client-next.gif);
+}
+
+.jcarousel-skin-clients .jcarousel-next-horizontal:hover {
+    background-position: center right;
+}
+
+.jcarousel-skin-clients .jcarousel-next-horizontal:active {
+    background-position: center right;
+}
+
+.jcarousel-skin-clients .jcarousel-next-disabled-horizontal,
+.jcarousel-skin-clients .jcarousel-next-disabled-horizontal:hover,
+.jcarousel-skin-clients .jcarousel-next-disabled-horizontal:active {
+    cursor: default;
+	background-image: url(../images/carousel-client-next.gif);
+    background-position: center left;
+}
+
+.jcarousel-skin-clients .jcarousel-prev-horizontal {
+    position: absolute;
+    top: -8px;
+    left: 0px;
+    width: 11px;
+    height: 100px;
+    cursor: pointer;
+    background:url(../images/carousel-client-prev.gif) no-repeat center right;
+}
+
+.jcarousel-skin-clients .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+    left: auto;
+    right: 5px;
+    background-image: url(../images/carousel-client-prev.gif);
+}
+
+.jcarousel-skin-clients .jcarousel-prev-horizontal:hover {
+    background-position: center left;
+}
+
+.jcarousel-skin-clients .jcarousel-prev-horizontal:active {
+    background-position: center left;
+}
+
+.jcarousel-skin-clients .jcarousel-prev-disabled-horizontal,
+.jcarousel-skin-clients .jcarousel-prev-disabled-horizontal:hover,
+.jcarousel-skin-clients .jcarousel-prev-disabled-horizontal:active {
+    cursor: default;
+	background-image: url(../images/carousel-client-prev.gif);
+    background-position: center left;
+}
+
+
+
+
+
+.jcarousel-prev:hover, .jcarousel-next:hover {background-position:bottom left;} 

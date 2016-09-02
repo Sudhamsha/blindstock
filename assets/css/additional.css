@@ -1,0 +1,42 @@
+#dashboard_wrap div section div#cv_wrap .tab-data .TaggerField{
+	margin-bottom: 20px;
+}
+
+#content .pagination a{
+	border: 1px solid #11294B;
+	padding: 10px 15px;
+	color: #11294B;
+	text-decoration: none;
+	margin-right: 10px;
+}
+
+#content .pagination a.active, #content .pagination a:hover {
+	background: #11294B;
+	color: #fff;
+}
+
+.ui-datepicker-header a{
+	cursor: pointer;
+}
+
+#ui-datepicker-div{
+	margin-top: -1px;
+	background: #FFF;
+	padding: 10px;
+	border: 1px solid #CCC;
+}
+
+.ui-datepicker-next{
+	float: right;
+}
+
+.settings-cog{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../images/white-cog.png) no-repeat center center;
+  float: right;
+  background-size: 20px;
+  margin-top: 22px;
+  margin-left: 12px;
+}

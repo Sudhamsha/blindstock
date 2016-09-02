@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->	
+{sn:global_html-header}
+<body class="style-10">
+
+    <!-- LOADER -->
+    <div id="loader-wrapper">
+        <div class="bubbles">
+            <div class="title">loading</div>
+            <span></span>
+            <span id="bubble2"></span>
+            <span id="bubble3"></span>
+        </div>
+    </div>
+
+    <div id="content-block">
+
+        <div class="content-center fixed-header-margin">
+            <!-- HEADER -->
+            {sn:global_header}
+
+            <div class="content-push">
+
+                <div class="breadcrumb-box">
+                    {exp:structure:breadcrumb here_as_title="yes"}
+                </div>
+
+                <div class="information-blocks">
+                    <div class="row">
+                        
+                        <div class="col-md-12 information-entry">
+                            <div class="blog-landing-box type-4 columns-2">
+                                {exp:channel:entries channel="blog" dynamic="off" paginate="bottom"  limit="9" disable="categories|category_fields|member_data"}
+                                <div class="blog-entry">
+                                    <a class="image hover-class-1" href="{page_url}"><img src="{blog_thumbnail}" alt="" /><span class="hover-label">Read More</span></a>
+                                    <div class="date">{entry_date format="%d"} <span>{entry_date format="%M"}</span></div>
+                                    <div class="content">
+                                        <a class="title" href="{page_url}">{title}</a>
+                                        <div class="subtitle"><a href="javascript:void(0)">By <b>{author}</b></a></div>
+                                        <div class="description">{exp:eehive_hacksaw chars="120"} {blog_description} {/exp:eehive_hacksaw}</div>
+                                        <a class="readmore" href="{page_url}">read more</a>
+                                    </div>
+                                </div>
+                                {/exp:channel:entries}
+                            </div>
+                            
+                            {exp:channel:entries channel="blog" dynamic="off" paginate="bottom" limit="9" disable="categories|category_fields|member_data"}
+                            {paginate}
+                            {pagination_links}
+                            <div class="page-selector">
+                                <div class="description">{current_page} of {total_pages}</div>
+                                <div class="pages-box">
+                                    {page}
+                                    <a class="square-button {if current_page}active{/if}" href="{pagination_url}">{pagination_page_number}</a>
+                                    {/page}
+                                    
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            {/pagination_links}
+                            {/paginate}
+                            {/exp:channel:entries}
+                        </div>
+
+                    </div>
+                </div>
+                
+                
+
+        </div>
+            
+        <div class="clear"></div>
+
+    </div>
+        <!-- FOOTER -->
+        {sn:global_footer}
+
+        {sn:global_search}
+    
+        {sn:global_cart}
+         
+        {sn:global_html-footer}
+</body>
+</html>

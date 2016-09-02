@@ -1,0 +1,1721 @@
+@media screen and (max-width: 1187px){
+ 	#testimonial_wrap {
+ 		section {
+ 			div {
+ 				article {
+ 					.testimony {
+ 						height: auto;	
+ 					}
+ 				}
+ 			}
+ 		}
+ 	}
+ 	#header_wrap {
+ 		background-size: cover;
+ 		header#worlds_birth{
+ 			figure {
+		 		@include pull(0);
+		 		@include push(0);
+		 	}
+ 			nav {
+		 		padding: 0 20px 0 0;
+		 		float: right;
+		 		ul {
+		 			li {
+		 				margin-right: 0px;
+		 			}
+		 		}
+		 	}
+ 		} 
+ 	} 
+ 	#content {
+ 		section#standard {
+ 			aside {
+ 				.sidebar-module{
+ 					.job_body {
+ 						padding: 20px 10px;
+ 						ul {
+ 							li {
+ 								a {
+ 									.area{
+ 										display: none;
+ 									}
+ 								}
+ 							}
+ 						}
+ 					}
+ 				}
+ 			}
+ 			#main {
+ 				article{
+ 					h4 {
+ 						border-bottom: 0;
+ 					}
+ 					.time_date {
+ 						padding: 10px 0;
+ 					}
+ 				} 
+ 			}
+ 		}
+ 	}
+ 	#job_feed_wrap {
+ 		section {
+ 			>div {
+ 				div {
+ 					.job_body {
+ 						ul {
+ 							li {
+ 								a {
+ 									font-size: 13px;
+ 									.area {
+ 										font-size: 12px;
+ 									}
+ 								}
+ 							}
+ 						}
+ 					}
+ 				}
+ 			}
+ 		}
+ 	}
+ 	#dashboard_wrap {
+ 		div {
+ 			section {
+ 				padding: 0 20px;
+ 				#latest_job_wrap {
+ 					@include column(6);
+ 				}
+ 				video {
+			 		@include column(6);
+			 	}
+			 	form#cv_wrap {
+			 		.tabs {
+			 			li {
+			 				margin-bottom: 0.2%;
+			 			}
+			 		}
+			 	}
+ 			}
+ 		}
+ 	}
+ 	#breadcrumb_wrap div #user_name {
+ 		padding: 0 20px;
+ 	}
+ 	#dashboard_wrap {
+ 		div {
+ 			section {
+ 				div#cv_wrap {
+ 					.tabs {
+ 						li {
+ 							width: 9.8%;
+ 							margin: 0 0.1%;
+ 							a {
+ 								padding: 17px 5px;
+ 								width: 100%;
+ 								text-align: center;
+ 								font-size: 13px;
+ 							}
+ 						}
+ 					}
+ 				}
+ 			}
+ 		}
+ 	}
+ 	#content {
+ 		section#standard{
+ 			#main {
+ 				padding: 0 0px;
+ 				ul {
+ 					padding: 0 20px;
+ 				}
+ 			}
+ 			.not_container {
+ 				@include column(8.5);
+ 				padding-left: 0;
+ 				.notification_wrap {
+ 					
+ 				}
+ 			} 
+		 	aside#email_notifications{
+				@include column(3.5);
+				padding-right: 0;
+			}
+ 		}
+ 	}
+ 	#content section#home #register div p {
+ 		font-size: 15px;
+		margin-bottom: 7px;
+ 	}
+ 	#footer_wrap {
+		footer {
+			h4 {
+				font-size: 17px;
+			}
+			#footer_home {
+				figure {
+					figcaption {
+	  					display: none;
+					}
+				}
+				#tag {
+					@include column(6);
+					p {
+						font-size: 14px;
+						line-height: 15px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1080px){
+	#job_feed_wrap section > div div .job_body {
+		padding: 20px 20px 0;
+		h4 {
+			font-size: 1em;
+		}
+		p {
+			font-size: 14px;
+		}
+		ul li a .area {
+			display: none;
+		}
+		.read_more {
+			padding: 6px 5px;
+			font-size: 15px;
+			width: auto;
+		}
+	}
+ 	#content section#standard {
+ 		padding: 0 20px;
+ 		form#candidate .row {
+ 			label {
+	 			font-size: 15px;
+	 			@include column(3);
+	 			padding: 11px 20px;
+	 		}
+	 		input[type='email'], input[type='password'], input[type='text'], select{
+	 			@include column(9);
+	 		}
+	 	}
+ 	}
+ 	div #tabs #a h2 {
+ 		line-height: 59px !important;
+  		font-size: 52px !important;
+ 	}
+	#content section#home {
+		#register {
+	 		@include column(4);
+	 		//margin-top: 0;
+			div {
+				height: auto;
+				padding-bottom: 35px;
+			}
+		}
+
+		#slider {
+			@include column(8);
+			div .caption p {
+		 		@include column(9);
+		 		h1 {
+		 			font-size: 30px;
+		 		}
+		 	}
+		}
+		#glossary {
+	 		display: none;
+	 		div {
+		 		a img {
+		 			max-width: 100%;
+		 		}
+		 	}
+		}
+		#cta_wrap{
+	 		@include column(12);
+	 		padding: 0 6px;
+	 		margin-top: 11px;
+	 		.cta {
+	 			margin-bottom: 20px;
+		 		@include column(4);
+			 	a img {
+			 		max-width: 100%;
+			 		display: block;
+			 		clear: both;
+	  				margin: 0 auto 20px;
+	  				display: block;
+			 	}
+			}
+		}
+	}
+	#footer_wrap {
+		footer {
+			p {
+	 			display: none;
+	 		}
+	 		ul {
+	 			li {
+	 				a {
+	 					font-size: 13px;
+	 				}
+	 			}
+	 		}
+	 	}
+	}
+	#header_wrap {
+ 		background-size: cover;
+ 		header#worlds_birth{
+ 			figure {
+		 		@include pull(0);
+		 		@include push(0);
+		 	}
+ 			nav {
+		 		padding: 0 20px 0 0;
+		 		float: right;
+		 		ul {
+		 			li {
+		 				margin-right: 0px;
+		 				a {
+			 				font-size: 16px;
+			 			}
+		 			}
+		 		}
+		 	}
+ 		} 
+ 	} 
+}
+@media screen and (max-width: 1000px){
+ 	div #tabs {
+ 		padding: 0;
+	 	ul {
+	 		@include column(12, 0);
+	 		li {
+	 			a {
+	 				width: 175px;
+	 			}
+	 		}
+	 	}
+	 	#a {
+	 		width: 100%;
+	 		padding: 0
+	 	}
+	}
+	#content {
+		section#standard {
+			aside.basic {
+ 				display: none;
+ 			}
+ 			#main {
+		 		//@include column(12);
+		 		padding: 0;
+		 	}
+		 	.not_container {
+ 				@include column(8.5);
+ 				padding-left: 0;
+ 				.notification_wrap {
+ 					
+ 				}
+ 			} 
+		 	aside#email_notifications{
+				@include column(3.5);
+				padding-right: 0;
+				.sidebar-module {
+					.buttons {
+						div{
+							@include column(6);
+						}
+					}
+				}
+			}
+ 		}
+ 	}
+
+ 	#content section#home #slider {
+ 		div {
+ 			.caption {
+ 				background-size: 100% 100%;
+ 			}
+ 		}
+ 	}
+
+ 	#header_wrap {
+ 		header#worlds_birth{
+ 			nav {
+ 				ul {
+		 			li {
+		 				margin-right: 0px;
+		 				margin-left: 20px;
+		 				a {
+			 				font-size: 15px;
+			 				padding: 1em 0;
+			 			}
+		 			}
+		 		}
+ 			}
+ 		} 
+ 	} 
+
+ 	#footer_wrap {
+		width: 100%;
+		background: url('/assets/images/footer-bg.jpg');
+		background-size: cover;
+		padding: 50px 20px;
+		footer {
+			@include row();
+			.thin {
+		 		@include column(3.5);
+		 	}
+		 	.thin:nth-child(2) {
+		 		display: none;
+		 	}
+			#footer_home {
+				figure {
+					@include column(3.5);
+					display: block;
+					figcaption {
+						text-align: center;
+						font-style: normal;
+						padding-left: 0;
+						line-height: 17px;
+						span {
+							text-align: center;
+							display: block;
+							color: #fff;
+						}
+					}
+				}
+				#tag {
+					display: none;
+				}
+			}			
+		}
+	}
+ 	#testimonial_wrap {
+ 		section {
+ 			div {
+ 				article {
+ 					.testimony_title {
+ 						p {
+ 							font-size: 14px;
+ 						}
+ 						i {
+					 		font-size: 26px;
+					 	}
+ 					}
+ 				}
+ 			}
+ 		}
+ 	}
+ 			
+ 	#dashboard_wrap {
+ 		div {
+ 			section {
+ 				form#cv_wrap { 
+ 					#status_wrap {
+ 						#status {
+ 							@include column(2.5);
+ 							padding: 13px;
+ 						}
+ 						#completion {
+					 		@include column(2.5);
+					 		padding: 13px 13px 8px;
+					 	}
+ 					}
+ 				}
+ 				.employer_profile {
+ 					.contact_upper1 {
+			 			padding-right: 0;
+			 		}
+			 	}
+ 			}
+ 		}
+ 	}
+ }
+ @media screen and (max-width: 930px) {
+
+ 	#dashboard_wrap {
+ 		div {
+ 			section {
+ 				div#cv_wrap {
+ 					.tabs {
+ 						li {
+ 							width: 19.8%;
+ 							margin: 0.1% 0.1%;
+ 							a {
+ 								padding: 17px 5px;
+ 								width: 100%;
+ 								text-align: center;
+ 								font-size: 13px;
+ 							}
+ 						}
+ 					}
+ 				}
+ 			}
+ 		}
+ 	}
+ 	.job_body ul li a .area {
+ 			display: none;
+ 	}
+ 	#content {
+ 		section#standard{
+			#main{
+				.job_details {
+					@include column(8,0);
+				}
+			}
+			.full-width {
+				.employer_details {
+					@include column(4);
+				}
+			}
+ 		}
+ 	}
+
+ 	#header_wrap {
+ 		header#worlds_birth {
+ 			figure {
+ 				@include column(3);
+ 			}
+ 			nav {
+ 				ul {
+ 					display: none;
+	 				li {
+	 					a {
+	 						font-size: 14px;
+	 					}
+	 				}
+	 			}
+ 			}
+ 		}
+ 	}
+
+ 	.slideout-menu {
+ 		display: inline;
+		position: fixed;
+		top: 0;
+		right: -250px;
+		width: 250px;
+		height: 100%;
+		background: $navy;
+		z-index: 100;
+		border-left: 1px solid rgba(255, 255, 255, 0.09);
+		h3 {
+			position: relative;
+			padding: 35px 20px 15px;
+			color: #fff;
+			font-size: 1.2em;
+			font-weight: 400;
+		}
+	}
+	.slideout-menu-toggle {
+		position: absolute;
+        top: 25px;
+        right: 20px;
+        display: inline-block;
+        padding: 11px 16px 11px;
+        font-weight: bold;
+        line-height: 1;
+        background: $turqoise;
+        color: #fff;
+        text-decoration: none;
+        vertical-align: top;
+
+	}
+	.slideout-menu .slideout-menu-toggle:hover {
+		color: #fff;
+	}
+	.slideout-menu ul {
+		list-style: none;
+		font-weight: 300;
+		border-top: 1px solid rgba(21, 21, 21, 0.16);
+		border-bottom: 1px solid rgba(69, 69, 69, 0.29);
+		padding-left: 0;
+	}
+	.slideout-menu ul li {
+		border-top: 1px solid rgba(69, 69, 69, 0.29);
+		border-bottom: 1px solid rgba(21, 21, 21, 0.16);
+	}
+	.slideout-menu ul li a {
+		position: relative;
+		display: block;
+		padding: 5px 10px;
+		font-size: 14px;
+		color: #999;
+		text-decoration: none;
+	}
+	.slideout-menu ul li a:hover {
+		background: $turqoise;
+		color: #fff;
+	}
+	.slideout-menu ul li a i {
+		position: absolute;
+		top: 15px;
+		right: 10px;
+		opacity: .5;
+	}
+	
+	.header {
+		padding: 15px;
+		background: #000;
+	}
+	.header .slideout-menu-toggle {
+		font-size: 1.2em;
+		color: #999;
+		text-decoration: none;
+	}
+	.header .slideout-menu-toggle:hover {
+		color: #fff;
+	}
+	.header .slideout-menu-toggle i {
+		vertical-align: top;
+		margin: 5px 3px 0 0;
+	}
+ 	#header_wrap header#worlds_birth figure {
+ 		margin-bottom: 24px;
+ 	}
+ 	#dashboard_wrap div section #latest_job_wrap, #dashboard_wrap div section video {
+ 		@include column(12);
+ 	}
+ 	#dashboard_wrap {
+ 		div {
+ 			section {
+ 				>div {
+ 					div {
+ 						header {
+ 							font-size: 22px;
+ 						}
+ 					}
+ 			    }
+ 		    }
+ 		}
+ 	}
+
+ 	#content section#home #slider {
+ 		@include column(12);
+ 		@include push(0);
+ 		@include pull(0);
+ 	}
+ 	#content section#home #register{
+ 		@include column(12);
+ 		margin-top: 0;
+		div {
+			height: auto;
+			padding-bottom: 35px;
+		}
+	}
+ }
+ @media screen and (max-width: 850px) {
+ 	#mobile_search_wrap {
+ 		display: block;
+ 	}
+ 	#breadcrumb_wrap .crumb_wrap .crumbs {
+ 		font-size: 15px;
+ 	}
+ 	#employer_contact {
+ 		margin-top: 25px; 
+		padding: 0 !important;
+		width: 100% !important;
+	}
+ 	#dashboard_wrap {
+ 		div {
+ 			section{ 
+ 				>div {
+ 					@include column(6);
+ 				}
+ 				div#cv_wrap {
+ 					.tab-data {
+ 						fieldset {
+ 							.row {
+ 								label {
+ 									width: 100%;
+ 								}
+ 								select, input, .wygwam {
+ 									width: 100%;
+ 								}
+ 							}
+ 						} 
+ 					} 
+ 				}
+ 			}
+ 		}
+ 	}
+ 	#content{
+ 		.pagination {
+ 			margin: 30px 0 50px;
+ 			display: block;
+ 		}
+ 		section#standard {
+ 			p {
+				color: #666;
+				line-height: 24px;
+				font-size: 14px;
+ 			}
+ 			.not_container {
+ 				@include column(8);
+ 				padding-left: 0;
+ 				.notification_wrap {
+ 					
+ 				}
+ 			} 
+		 	aside#email_notifications{
+				@include column(4);
+				padding-right: 0;
+				.sidebar-module {
+					header {
+						h4 {
+							font-size: 18px;
+						}
+					}
+					.buttons {
+						div{
+							@include column(6);
+						}
+					}
+				}
+			}
+			#main {
+				@include column(12, 0);
+			}
+			aside#standard-sidebar {
+				@include column(12, 0);
+ 				.sidebar-module{
+ 					display: none;
+ 					.job_body {
+ 						padding: 20px 10px;
+ 						ul {
+ 							li {
+ 								a {
+ 									.area{
+ 										display: none;
+ 									}
+ 								}
+ 							}
+ 						}
+ 					}
+ 				}
+ 			}
+ 			form#candidate {
+	 			.row {
+	 				label {
+						span {
+							display: none;
+						}
+					}
+	 			}
+ 				.half-row {
+ 					label {
+						font-size: 15px !important;
+						span {
+							display: none;
+						}
+					}
+					select {
+						background: url("/assets/images/select-arrow.png") no-repeat right;
+					}
+				}
+			}
+ 		}
+	}
+	div#sponsors_wrap {
+		padding: 50px 20px;
+	}
+ 	#breadcrumb_wrap {
+ 		padding: 16px 0;
+ 		.crumb_wrap {
+	 		.crumbs {
+	 			@include column(9);
+	 			a {
+	 				display: none;
+	 			}
+	 		}
+	 		#user_name {
+	 			@include column(3);
+	 			a {
+	 				float: right;
+	 			}
+	 			div {
+	 				margin-top: 7px;
+	 			}
+	 		}
+	 	}
+ 	}
+ 	#dashboard_wrap {
+ 		div {
+ 			section{ 
+ 				>div {
+ 					@include column(6);
+ 				}
+ 				div#cv_wrap {
+ 					nav {
+ 						margin-bottom: 25px;
+ 						a {
+ 							@include column(3);
+ 							margin: 0;
+ 							padding: 10px 0px;
+ 							font-size: 13px;
+ 							border: 1px solid #fff;
+ 							text-align: center;
+ 						}
+ 					}
+ 				}
+ 			}
+ 		}
+ 	}
+ 	#job_feed_wrap {
+ 		display: none;
+ 	}
+ 	#testimonial_wrap {
+ 		section {
+ 			div {
+ 				article {
+ 					.testimony_title {
+ 						i {
+					 		display: none;
+					 	}
+					 	p {
+						    float: none;
+						    text-align: center;
+						}
+					}
+					.testimony p {
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+
+	#dashboard_wrap div section form#cv_wrap .tabs a {
+		padding: 12px 8px;
+		display: inline-block;
+		background: #009EBB;
+		color: #fff;
+		text-decoration: none;
+		white-space: pre-line;
+		height: 50px;
+		border: 1px solid #fff;
+	}
+	#content section#standard form#candidate .row .job-label, #content section#standard form#publishForm .row .job-label {
+		width: 100%;
+	}
+	#content section#standard form#candidate .row .input[type='text'] {
+		width: 100% !important;
+	}
+	.skill_set_wrap {
+		@include column(12);
+		padding: 0px !important;
+		label {
+			background: $turqoise;
+			color: #fff;
+			padding: 10px;
+			font-family: 'focobold';
+		}
+		select {
+			height: 100%;
+			border: 1px solid $turqoise;
+			color: $navy;
+		}
+		select[name~='job_experience'], textarea[name~='additional_information_resources'] {
+			max-width: 100%;
+			float: left;
+		}
+		select[name~='field_offset_64'] {
+			width: 100%;
+		}
+		.TaggerField {
+			table {
+				border: 1px solid $turqoise;
+				td {
+					padding: 10px;
+					width: 100% !important;
+	                display: block;
+	                border: 0;
+				}
+			}
+			.TagBox {
+				h4 {
+					height: 50px;
+					color: $navy;
+					font-size: 14px;
+					margin-top: 10px;
+					text-align: center;
+				}
+				.inner {
+					width: 9			8%;
+				    margin: 1%;
+					input {
+						height: 40px;
+						margin-right: 0;
+						margin-bottom: 0;
+						width: 100%;
+					}
+					.tag {
+						background: url(img/tag_bg.gif);
+						border: 1px solid #D9D9D9;
+						float: left;
+						margin: 0 10px 5px 0;
+						padding: 2px;
+						padding: 5px 25px 5px 5px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	.glossary-sidebar {
+		display: none !important;
+	}
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	/* Label the data */
+	#content section#standard table.candidate-search td:nth-of-type(1):before { content: "Profile"; }
+	#content section#standard table.candidate-search td:nth-of-type(2):before { content: "Reference"; }
+	#content section#standard table.candidate-search td:nth-of-type(3):before { content: "Country"; }
+	#content section#standard table.candidate-search td:nth-of-type(4):before { content: "Primary Skills"; }
+	#content section#standard table.candidate-search td:nth-of-type(5):before { content: "Checkbox"; }
+
+	#content section#standard table.bookmark-candidates td:nth-of-type(1):before { content: "Profile"; }
+	#content section#standard table.bookmark-candidates td:nth-of-type(2):before { content: "Reference"; }
+	#content section#standard table.bookmark-candidates td:nth-of-type(3):before { content: "Country"; }
+	#content section#standard table.bookmark-candidates td:nth-of-type(4):before { content: "Primary Skills"; }
+	#content section#standard table.bookmark-candidates td:nth-of-type(5):before { content: "Checkbox"; }
+
+	#content section#standard table.job-table td:nth-of-type(1):before { content: "Job Title"; }
+	#content section#standard table.job-table td:nth-of-type(2):before { content: "Edit"; }
+	#content section#standard table.job-table td:nth-of-type(3):before { content: "Closing Date"; }
+	#content section#standard table.job-table td:nth-of-type(4):before { content: "Status"; }
+	#content section#standard table.job-table td:nth-of-type(5):before { content: "Checkbox"; }
+
+	#content section#standard table.user-admin-table td:nth-of-type(1):before { content: "User"; }
+	#content section#standard table.user-admin-table td:nth-of-type(2):before { content: "Access Level"; }
+
+	#content section#standard .add-user-btn {
+		width: 100%;
+		float: none;
+		display: inline-block;
+		text-align: center;
+	}
+	#content section#standard .remove-btn {
+		margin-left: 0 !important;
+	}
+}
+@media screen and (max-width: 735px){
+	#breadcrumb_wrap {
+ 		padding: 16px 0;
+ 		.crumb_wrap {
+	 		.crumbs {
+	 			display: none;
+	 		}
+	 		#user_name {
+	 			@include column(12);
+	 			a {
+	 				float: right;
+	 			}
+	 			div {
+	 				margin-top: 7px;
+	 			}
+	 		}
+	 	}
+ 	}
+
+ 	#content {
+ 		section#standard {
+ 			padding: 0 20px;
+ 			#main{
+				.job_details {
+					@include column(12,0);
+					.job_desc {
+						h2  {
+							margin-top: 30px;
+							font-size: 30px;
+							text-align: left;
+						}
+						h3 {
+							text-align: left;
+						}
+						p {
+							text-align: left;
+						}
+					}
+				}
+			}
+			.full-width {
+				.employer_details {
+					@include column(4, 0);
+					a {
+						@include gradient_btn();
+						padding: 9px 20px;
+						border-radius: 4px;
+						text-align: center;
+						color: #fff;
+						border: 1px solid #fff;
+						margin-bottom: 16px;
+						&:hover {
+							@include gradient_btn_hover();
+						}
+					}
+					span {
+						margin-top: 25px;
+					}
+				}
+			}
+ 			h1 {
+				color: #11294B;
+				font-size: 30px;
+			}
+ 			ul.provide {
+ 				li {
+ 					@include column(6);
+ 				}
+ 			}
+ 			.employer_listing {
+ 				>div{
+ 					figure {
+		 				@include column(4);
+		 			}
+		 			.business {
+		 				@include column(8);
+		 			}
+		 			ul {
+				 		@include column(8);
+				 	}
+		 		}
+		 	}
+		 	form#candidate, form#publishForm {
+		 		.half-row_left, .half-row_right {
+			 		@include column(12);
+			 		padding : 0;
+			 	}
+			 	.row {
+		 			label {
+			 			font-size: 14px;
+			 			@include column(12);
+			 			padding: 11px 20px;
+			 		}
+			 		input[type='email'], input[type='password'], input[type='text'], select{
+			 			@include column(12);
+			 		}
+			 		.job-input, .wygwam, textarea, select, select[name~='closing_date'] {
+			 			@include column(12);
+			 			width: 100% !important;
+			 			max-width: 100% !important;
+			 		}
+			 	}
+		 	}
+ 		}
+ 	}
+
+ 	#header_wrap {
+ 		header#worlds_birth {
+ 			figure {
+ 				@include column(3.5);
+ 			}
+ 		}
+ 	}
+
+ 	#dashboard_wrap {
+ 		div {
+ 			section {
+ 				div#cv_wrap{
+					nav {
+ 						display: none;
+ 					}
+ 					.tabs {
+ 						a {
+ 							padding: 13px 15px;
+ 							height: auto;
+ 							font-size: 14px;
+ 						}
+ 						li {
+ 							margin-bottom: 2px;
+ 						}
+ 					}
+				}
+			}
+		}
+	}
+
+ 	#breadcrumb_wrap {
+ 		padding: 16px 0;
+ 		div {
+	 		h1 {
+	 			font-size: 22px;
+	 			margin-top: 4px;
+	 			@include column(7);
+	 		}
+	 		#user_name {
+	 			@include column(5);
+
+	 			div {
+	 				margin-top: 7px;
+	 			}
+
+	 			a, img {
+	 				float: right;
+	 			}
+
+	 		}
+	 	}
+ 	}
+ 	#content section#home #slider div .caption {
+ 		a {
+ 			float: none;
+ 			display: block;
+ 			width: 200px;
+ 			margin: 0 auto;
+ 			padding: 5px;
+  			clear: both;
+  			text-align: center;
+  			margin-top: 40px; 
+ 		}
+ 		hgroup {
+	 		@include column(12);
+	 		h1 {
+	 			padding-top: 0;
+	 			text-align: center;
+	 		}
+			p {
+		 		display: none;
+		 	}
+		}
+	}
+ 	#footer_wrap {
+ 		padding: 35px 20px;
+ 		footer {
+	 		ul {
+	 			li a {
+					display: block;
+					text-align: center;
+					font-size: 13px;
+				}
+				li:before {
+					display: none;
+				}
+			}
+	 		h4 {
+		 		text-align: center;
+		 	}
+	 		.thin {
+		 		@include column(6);
+		 		margin-bottom: 50px;
+		 	}
+		 	.thin:nth-child(4) {
+		 		display: none;	
+		 	}
+		 	.wide {
+		 		@include column(6);
+		 	}
+		 	#footer_home {
+		 		figure {
+			 		@include column(4);
+			 		@include pull(4);
+			 		@include push(4);
+			 	}
+		 	}
+		 	.remove a i {
+				display: none;
+			}
+		}
+	}
+ }
+ @media screen and (max-width: 640px) {
+ 	#content {
+ 		section#standard{
+ 			h1 {
+				text-align: center;
+				font-size: 27px;
+			}
+			#main {
+				.job_details .job_desc h2 {
+				  margin-top: 12px;
+				  font-size: 30px;
+				  text-align: left;
+				}
+			}
+			.full-width {
+				h1 {
+					text-align: left;
+				}
+				.employer_details {
+					margin-top: 25px;
+					@include column(6, 0);
+					a {
+						@include gradient_btn();
+						padding: 9px 20px;
+						border-radius: 4px;
+						text-align: center;
+						color: #fff;
+						border: 1px solid #fff;
+						margin-bottom: 16px;
+						&:hover {
+							@include gradient_btn_hover();
+						}
+					}
+					span {
+						margin-top: 25px;
+					}
+				}
+			}
+			.not_container {
+ 				@include column(12,0);
+ 				.notification_wrap {
+ 					h2 {
+ 						text-align: left;
+ 					}
+ 					.incoming_msg {
+ 						p{
+ 							text-align: left;
+ 						}
+ 					}
+ 				}
+ 			} 
+		 	aside#email_notifications{
+				@include column(12, 0);
+				margin-top: 0px;
+				.sidebar-module {
+					margin-top: 25px;
+					header {
+						h4 {
+							font-size: 18px;
+						}
+					}
+					.buttons {
+						div{
+							@include column(6);
+						}
+					}
+				}
+			}
+ 			article:nth-child(even), article:nth-child(odd) {
+ 				@include column(12);
+ 				padding: 0;
+ 				img {
+			 		margin: 0 auto;
+			 		display: block;
+			 	}
+		 		.time_date {
+			 		text-align: center;
+			 		font-size: 13px;
+			 	}
+			 	a {
+			 		margin: 20px auto;
+			  		padding: 6px 4px;
+			  		font-size: 15px;
+			 	}
+		 	}
+		}
+	}
+ 	#header_wrap {
+ 		padding-bottom: 25px;
+ 		header#worlds_birth figure {
+	 		@include column(4);
+	 	}
+ 	}
+ 	#content section#home  {
+ 		#slider {
+	 		display: none;
+	 	}
+	 	#register {
+	 		padding: 0 6px;
+	 	}
+	}
+ 	div #tabs #a h2 {
+	  line-height: 43px !important;
+	  font-size: 41px !important;
+	  text-align: center;
+	}
+ 	#content {
+	 	section#standard {
+	 	  	margin-top: 32px;
+		 	h2 {
+		 		text-align: center;
+		 		line-height: 76px;
+  				font-size: 50px;
+		 	}
+		 	aside {
+		 	 	padding: 0;
+		 	} 
+		}
+	}
+ 	.slideout-menu-toggle {
+		position: absolute;
+		top: 16px;
+		right: 20px;
+		display: inline-block;
+		padding: 8px;
+		font-weight: bold;
+		line-height: 1;
+		background: #009EBB;
+		color: #fff;
+		text-decoration: none;
+		vertical-align: top;
+	}
+ 	#dashboard_wrap div section .employer_profile .logo {
+ 		@include column(4);
+ 	}
+ 	#content section#home #cta_wrap .cta {
+ 		@include column(6);
+ 		padding: 0 5px;
+ 	}
+
+ 	#content {
+ 		section#standard {
+ 			p {
+ 				text-align: center;
+ 			}
+ 			h3 {
+ 				text-align: center;
+ 				time {
+ 					display: block;
+ 				}
+ 			}
+ 			aside {
+ 				@include column(12, 0);
+ 			}
+ 			.employer_listing {
+ 				>div {
+ 					.business {
+ 						a {
+ 							margin-bottom: 15px;
+ 						}
+ 						div {
+ 							margin-bottom: 10px !important;
+ 							span {
+ 								display: none;
+ 							}
+ 						}
+ 					}
+ 					figure {
+				 		
+				 		padding-bottom: 0px;
+				 	}
+				 	ul {
+				 		@include column(12);
+				 		li {
+					 		text-align: right;
+	 						font-size: 13px;
+					 		span {
+						 		float: left;
+						 		text-align: left;
+					 		}
+					 	}
+					}
+					p {
+						text-align: left;
+					}
+					strong {
+				 		text-align: center;
+				 	}
+				}
+			}
+		}
+ 	}
+
+ 	#dashboard_wrap { 
+ 		div {
+ 			section{
+ 				>div {
+ 					@include column(12, 0);
+ 				}
+ 			}
+ 		}
+ 	}
+ 	#content section#standard #main {
+ 		margin-bottom: 50px;
+ 	}
+ 	#job_feed_wrap section > div:nth-child(2){
+ 		display: block;
+ 	}
+ 	#job_feed_wrap section > div {
+ 		@include column(12);
+ 		margin-bottom: 20px;
+ 	}
+ 	#testimonial_wrap {
+ 		section {
+ 			div {
+ 				h3 {
+			 		font-size: 17px;
+			 		a {
+				 		font-size: 17px;
+				 	}
+			 	}	
+ 				article {
+			 		@include column(12);
+			 		padding: 0;
+			 	}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 520px){
+
+	#dashboard_wrap {
+ 		div {
+ 			section {
+ 				div#cv_wrap {
+ 					.tabs {
+ 						li {
+ 							width: 24.8%;
+ 							margin: 0.1% 0.1%;
+ 							a {
+ 								padding: 17px 5px;
+ 								width: 100%;
+ 								text-align: center;
+ 								font-size: 13px;
+ 							}
+ 						}
+ 					}
+ 				}
+ 			}
+ 		}
+ 	}
+
+	#content {
+		section#standard {
+			.full-width {
+				.employer_details {
+					@include column(12, 0);
+					span {
+						text-align: center;
+					}
+				}
+			}
+			table.user_admin {
+				th {
+					font-size: 13px;
+				}
+			} 
+			.delete-user-wrap {
+				width: 100%;
+				float: none;
+				.delete-selected {
+					width: 74%;
+				}
+				input[type="submit"] {
+					width: 25%;
+					margin-left: 1%;
+				}
+			}
+			#main {
+				.glossary_listing {
+					li {
+						a {
+							img {
+								display: none;
+							}
+						}
+					}
+				}
+				ul {
+					li{
+						.turq {
+							display: block !important;
+							text-align: center;
+							margin: 0 auto;
+						}
+					}
+				}
+ 				article{
+ 					h4 {
+ 						font-size: 1.1em;
+ 						text-align: center;
+ 						margin-bottom: 0;
+ 					}
+ 					.time_date {
+ 						padding: 10px 0;
+ 					}
+ 				} 
+			}
+			aside#standard-sidebar {
+				@include column(12, 0);
+ 				.sidebar-module{
+ 					display: inline;
+ 					.job_body {
+ 						padding: 20px 10px;
+ 						ul {
+ 							li {
+ 								a {
+ 									.area{
+ 										display: none;
+ 									}
+ 									text-align: center;
+ 								}
+ 							}
+ 						}
+ 					}
+ 				}
+ 			}
+		}
+	}
+
+	#testimonial_wrap section div article .testimony {
+
+		height: auto;
+
+	}
+	.minimal_padding {
+
+	  	padding-bottom: 20px !important;
+
+	}
+	#footer_wrap {
+		background-size: cover;
+		footer {
+			#footer_home {
+				figure {
+					@include column(8);
+					display: block;
+					@include push(2);
+ 					@include pull(2);
+				}			
+			}	
+			.thin {
+		 		@include column(12);
+		 		margin-bottom: 50px;
+		 	}
+		 	.thin:nth-child(4) {
+		 		display: block;	
+		 	}
+		 	.thin:nth-child(3) {
+		 		display: block;	
+		 	}
+		 	.wide {
+		 		@include column(12);
+		 	}		
+		}
+	}
+
+	#header_wrap {
+		padding-top: 17px;
+		header#worlds_birth{ 
+			figure {
+				@include column(5);
+			}
+		}
+	}
+	.navy{
+	    display: block;
+  		clear: both;
+  		margin-top: 15px;
+  		float: left;
+  	}
+
+  	.btn-danger {
+  		margin-top: 15px;
+  	}
+	#content section#standard {
+ 		padding: 0 20px;
+ 		h3 {
+ 			span {
+ 				display: block;
+ 			}
+ 			#terms {
+ 				display: block;
+				float: none;
+				#agree {
+					float: none;
+				}
+ 			}
+ 		}
+ 		aside {
+ 			#social-module {
+				div {
+					@include column(6);
+					padding: 0 5px 5px;
+				}
+			}
+		}
+ 		ul.provide {
+ 			li {
+		 		@include column(12);
+		 		text-align: center;
+		 	}
+		 	li:before {
+		 		display: none;
+		 	}
+		}
+ 		.employer_listing > div {
+ 			.btn-wrap {
+ 				float: none;
+ 				.link, .bookmarked, .bookmark_me  {
+ 					@include column(12);
+ 					padding: 5px 20px;
+ 					text-align: center;
+ 					margin-bottom: 10px;
+ 					margin-left: 0 !important;
+ 				}
+ 				form {
+ 					width: 100%;
+ 					margin: 0;
+ 				}
+ 			}
+ 			.business {
+ 				width: 100%;
+ 				.match-score {
+ 					width: 100%;
+ 					text-align: center;
+ 				}
+ 				div {
+ 					@include column(4,0);
+ 					margin-right: 0 !important;
+ 				}
+ 				a {
+ 					text-align: center;
+ 				}
+ 			}
+		 	p {
+				text-align: center;
+			}
+ 			figure {
+	 			display: none;
+	 		}
+	 	}
+ 		form#candidate .row {
+ 			label {
+	 			font-size: 13px;
+	 			@include column(12);
+	 			padding: 11px 13px;
+	 		}
+
+	 		input[type='email'], input[type='password'], input[type='text'], select{
+	 			@include column(12);
+	 		}
+	 		#submit {
+				@include column(12);
+				padding: 6px;
+			}
+			.register_group div {
+				float: left;
+				margin-top: 10px;
+				font-size: 14px;
+			}
+			.cancel {
+				padding: 4px;
+				font-size: 13px;
+	  			width: 36%;
+			}
+			#submit {
+				padding: 5px;
+				font-size: 16px;
+			}
+			label {
+				padding: 12px 5px;
+			}
+	 	}
+ 	}
+ 	#dashboard_wrap {
+ 		div {
+ 			section {
+ 				.employer_profile {
+					.logo {
+				 		@include column(6);
+				 		@include push(3);
+				 		@include pull(3);
+				 		margin-bottom: 20px;
+				 	}
+					.contact_upper1  {
+				 		float: none;
+				 		a.website {
+							float: none;
+							display: block;
+							color: #E62F28;
+							background: #fff;
+							text-align: center;
+							margin: 0 auto;
+							width: 100%;
+						}
+						a.phone {
+					 		float: none;
+					 		margin: 0 auto;
+					 		text-align: center;
+					 	}
+				 	}
+				}
+ 				div#cv_wrap{
+					.tabs {
+ 						a {
+ 							padding: 10px;
+ 							font-size: 13px;
+ 						}
+ 					}
+ 				}
+ 			}
+ 		}
+ 	} 
+ 	#breadcrumb_wrap { 
+ 		padding: 11px 0;
+ 		div h1 {
+ 			font-size: 25px;
+ 		}
+ 	}
+}
+
+@media screen and (max-width: 480px) {
+	#header_wrap header#worlds_birth figure {
+		@include column(6);
+		margin-bottom: 0;
+	}
+	#content section#home #register {
+		margin-top: 6px;
+	}
+	#job_feed_wrap section > div div .job_body ul li a .area {
+		display: none;
+	}
+	#mobile_search_wrap {
+		div {
+			form {
+				fieldset {
+					float: none;
+					label {
+						display: none;
+					}
+					input[type='search'], input[type='text'] {
+						margin-bottom: 10px;
+						height: 35px;
+					}
+					input {
+						width: 100% !important;
+						@include column(12);
+					}
+				}
+			}
+		}
+	}
+}

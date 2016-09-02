@@ -1,0 +1,38 @@
+<div class="cart-box popup">
+        <div class="popup-container">
+        {exp:cartthrob:cart_items_info}
+        
+        {if no_results}
+                <p>There are no products in your cart</p>
+                <br/><br/>
+        {/if}
+            <div class="cart-entry">
+                <a class="image" href="{site_url}products/{url_title}">{embed="shop/thumb" entry_id="{entry_id}"}</a>
+                <div class="content">
+                    <a class="title" href="{site_url}products/{url_title}">{title}</a>
+                     <div class="inline-description"><strong>Size</strong>: {item_options:item_dimensions_1}</div>
+                    <div class="quantity">Quantity: {quantity}</div>
+                    <div class="price">{item_subtotal}</div>
+                </div>
+                <div class="button-x"><i class="fa fa-close"></i></div>
+            </div>
+        {/exp:cartthrob:cart_items_info}
+         
+         {exp:cartthrob:cart_items_info limit="1"}
+            <div class="summary">
+                <div class="grandtotal">Subtotal <span>{cart_subtotal}</span></div>
+            </div>
+         {/exp:cartthrob:cart_items_info}
+            <div class="cart-buttons">
+                <div class="column">
+                    <a class="button style-3" href="{site_url}cart">view cart</a>
+                    <div class="clear"></div>
+                </div>
+                <div class="column">
+                    <a class="button style-4" href="{site_url}cart">checkout</a>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>

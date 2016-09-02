@@ -1,0 +1,22 @@
+#header_wrap{
+	background: #11294B;
+}
+#content section#standard article {
+	padding-left: 0 !important;
+	margin-bottom: 50px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: inline;
+	float: left;
+	width: 50%;
+	padding: 0 20px;
+}
+
+a.login {
+	margin-top: 8px;
+}
+
+input[type='text'] {
+	padding: 13.5px 20px;
+}

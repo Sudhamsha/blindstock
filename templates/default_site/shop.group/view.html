@@ -1,0 +1,335 @@
+{exp:channel:entries channel="products_manual" limit="1"}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->	
+{sn:global_html-header}
+<body class="style-10">
+
+    <!-- LOADER -->
+    <div id="loader-wrapper">
+        <div class="bubbles">
+            <div class="title">loading</div>
+            <span></span>
+            <span id="bubble2"></span>
+            <span id="bubble3"></span>
+        </div>
+    </div>
+
+    <div id="content-block">
+
+        <div class="content-center fixed-header-margin">
+            <!-- HEADER -->
+            {sn:global_header}
+
+            <div class="content-push">
+
+                <div class="breadcrumb-box">
+                    {exp:structure:breadcrumb here_as_title="yes"}                      
+                </div>
+
+                <div class="information-blocks">
+                    <div class="row">
+                        <div class="col-sm-6 information-entry">
+                            <div class="product-preview-box">
+                                <div class="swiper-container product-preview-swiper" data-autoplay="0" data-loop="1" data-speed="500" data-center="0" data-slides-per-view="1">
+                                    <div class="swiper-wrapper">
+                                        {product_images}
+                                        <div class="swiper-slide">
+                                            <div class="product-zoom-image">
+                                                <img src="{product_images:image}" alt="{title}" data-zoom="{product_images:image}" />
+                                            </div>
+                                        </div>
+                                        {/product_images}
+                                    </div>
+                                    <div class="pagination"></div>
+                                    <div class="product-zoom-container">
+                                        <div class="move-box">
+                                            {product_images}
+                                            <div class="swiper-slide">
+                                                <div class="product-zoom-image">
+                                                    <img src="{product_images:image}" alt="{title}" data-zoom="{product_images:image}" />
+                                                </div>
+                                            </div>
+                                            {/product_images}
+                                        </div>
+                                        <div class="zoom-area"></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-hidden-edges">
+                                    <div class="swiper-container product-thumbnails-swiper" data-autoplay="0" data-loop="0" data-speed="500" data-center="0" data-slides-per-view="responsive" data-xs-slides="3" data-int-slides="3" data-sm-slides="3" data-md-slides="4" data-lg-slides="4" data-add-slides="4">
+                                        <div class="swiper-wrapper">
+                                            {product_images}
+                                             <div class="swiper-slide selected">
+                                                <div class="paddings-container">
+                                                    <img src="{product_images:image}" alt="" />
+                                                </div>
+                                            </div>
+                                            {/product_images}
+                                        </div>
+                                        <div class="pagination"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 information-entry">
+                            <div class="product-detail-box" style="padding-right: 140px">
+                                <h1 class="product-title">{title}</h1>
+                                <h3 class="product-subtitle">Loremous Clothing</h3>
+                                <div class="product-description detail-info-entry">
+                                    {product_description}
+                                </div>
+                                
+                                <div>
+                                    <div style="float: left;">
+                                        <h3 style="font-size: 17px; font-weight: 500; padding: 10px;">Price Calculator</h3>
+                                    </div>
+                                    
+                                    <div style="float: right;  padding: 10px;">
+                                        <input type="radio" class="size_converter" name="size" value="cm" checked>&nbsp;&nbsp;&nbsp;cm
+                                        <input type="radio" class="size_converter" name="size" value="inches">&nbsp;&nbsp;&nbsp;inches
+                                    </div>
+                                </div>
+                                <div style="clear: both; border-top: 1px solid #E6E6E6; padding: 10px;"></div>
+                                
+                                <div class="quantity-selector detail-info-entry" style="padding: 10px;">
+                                        <input class="simple-field max_width" placeholder="Enter your width" value="" type="number" style="width: 48%; margin-right: 1%">
+                                        
+                                       
+                                        <input class="simple-field max_height" placeholder="Enter your drop" value="" type="number"  style="width: 48%;">
+                                    </div>
+                                
+                                
+                                <div class="price detail-info-entry" style="float: right; clear: both; padding-right: 10px;">
+                                    <div class="detail-info-entry-title">Price</div>
+                                    <!--<div class="prev">$90,00</div>-->
+                                    <div class="current price_changer">{price}</div>
+                                </div>
+                                
+                                <div class="quantity-selector detail-info-entry" style="padding-left: 10px;">
+                                    <div class="detail-info-entry-title">Quantity</div>
+                                    <div class="entry number-minus">&nbsp;</div>
+                                    <input class="entry number quantity_number" value="1" />
+                                    <div class="entry number-plus">&nbsp;</div>
+                                </div>
+                                
+                                {exp:cartthrob:add_to_cart_form entry_id="{entry_id}" allow_user_price="yes" return="/blinds/cart"}
+                                <input type="hidden" name="price" class="hidden_price" />
+                                <input type="hidden" name="quantity" class="hidden_quantity" />
+                                <input type="hidden" name="item_options[item_dimensions_1]" class="hidden_size" />
+                                
+                                <div class="detail-info-entry">
+                                    <button class="button style-10 add_cart" style="background-color: #00B8F1; color: #fff; border: none">Add to cart</a>
+                                    <div class="clear"></div>
+                                </div>
+                                
+                                {/exp:cartthrob:add_to_cart_form}
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="information-blocks">
+                    <div class="tabs-container style-1">
+                        <div class="swiper-tabs tabs-switch">
+                            <div class="title">Product info</div>
+                            <div class="list">
+                                <a class="tab-switcher active">SPECIFICATION</a>
+                                <a class="tab-switcher">HOW TO MEASURE GUIDES</a>
+                                <a class="tab-switcher">FITTING INSTRUCTIONS</a>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="tabs-entry">
+                                <div class="article-container style-1">
+                                    <div class="row">
+                                        <div class="col-md-6 information-entry">
+                                            <h4>SPECIFICATION</h4>
+                                            {technical_specification}
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs-entry">
+                                <div class="article-container style-1">
+                                    <div class="row">
+                                        <div class="col-md-6 information-entry">
+                                            <h4>HOW TO MEASURE GUIDES</h4>
+                                            {how_to_measure}
+                                        </div>
+                                        
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs-entry">
+                                <div class="article-container style-1">
+                                    <div class="row">
+                                        <div class="col-md-6 information-entry">
+                                            <h4>FITTING INSTRUCTIONS</h4>
+                                            {fitting_instructions_and_how_to_}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="clear"></div>
+
+    </div>
+    
+  
+        
+        
+        <!-- FOOTER -->
+        {sn:global_footer}
+
+        {sn:global_search}
+    
+        {sn:global_cart}
+         
+        {sn:global_html-footer}
+        
+        <script type="text/javascript">
+            $(".max_width, .max_height").val(0);
+            var width = [{exp:playa:children field="select_price_grid"}{price_grid}{price_grid:max_width},{/price_grid} {/exp:playa:children}];
+            var drop = [{exp:playa:children field="select_price_grid"}{price_grid}{price_grid:max_drop},{/price_grid} {/exp:playa:children}];
+            var price = [{exp:playa:children field="select_price_grid"}{price_grid}{price_grid:price},{/price_grid} {/exp:playa:children}];
+            
+            var max_width = Math.max.apply(Math, width);
+            var max_drop = Math.max.apply(Math, drop);
+            var selected_converter = $(".size_converter").val();
+                 
+                    if( selected_converter == 'cm'){
+                        var mul = '10';
+                        }
+                    else{
+                        var mul = '25.4';
+                    }
+                    
+            
+            $(".max_width").attr("max", max_width);
+            $(".max_drop").attr("max", max_drop);
+            
+            var mapper = [
+                {exp:playa:children field="select_price_grid"}
+                    {price_grid}{
+                     "width": {price_grid:max_width},
+                     "drop": {price_grid:max_drop},
+                     "price": {price_grid:price}
+                    },{/price_grid}
+                {/exp:playa:children}
+            ];
+            var max_width_index = null;
+            var max_drop_index = null;
+            
+                $(".add_cart").hide();
+            
+                $(".max_width, .max_height").keyup(function(){
+                    
+                    var max_h_val = $(".max_height").val();
+                    var max_w_val = $(".max_width").val();
+                    
+                    
+                    if(math.unit($(".max_width").val(), selected_converter)> max_width){
+                        $(".max_width").val(math.unit(max_width));
+                    }
+                    
+                    if($(".max_height").val() > max_drop){
+                        $(".max_height").val(max_drop);
+                    }
+                    
+                    if(Math.floor($(".max_height").val()) == $(".max_height").val() && $.isNumeric($(".max_height").val())){
+                        
+                    } else{
+                        $(".max_height").val("0");
+                    }
+                    
+                    if(Math.floor($(".max_width").val()) == $(".max_width").val() && $.isNumeric($(".max_width").val())){
+                        
+                    } else{
+                        $(".max_width").val("0");
+                    }
+                    var price_points = [];
+                    var closest_width = closest(width, $(".max_width").val());
+                    var closest_drop = closest(drop, $(".max_height").val());
+                    
+                    //here
+                    //if( selected_converter == 'cm'){
+                    //    max_h_val = max_h_val * 10;
+                    //    max_w_val = max_w_val * 10;
+                    //    
+                    //    $(".max_width").val(max_w_val);
+                    //    $(".max_height").val(max_h_val);
+                    //    
+                    //    console.log(max_h_val + "x" + max_w_val);
+                    //    }
+                    //else{
+                    //    
+                    //}
+                    
+                    
+                    $(".hidden_size").val($(".max_width").val() + 'x' + $(".max_height").val());
+                    $.grep( mapper, function( n, i ) { 
+                         if(n.width == closest_width && n.drop == closest_drop) {
+                             if(closest_width != 0 && closest_drop != 0)
+                             $('.price_changer').html("£" + n.price);
+                             $('.hidden_price').val(n.price);
+                             $('.hidden_quantity').val($(".quantity_number").val());
+                             
+                             $(".add_cart").show();
+                         }
+                    });  
+                });
+                
+                $(".quantity_number").change(function(){
+                    var p = parseInt($('.hidden_price').val(), 10);
+                    var q = parseInt($(this).val(), 10);
+                   
+                    $('.price_changer').html("£" + math.multiply(p, q));
+                    
+                    });
+                
+                $(".number-minus").click(function(){
+                    var q = parseInt($(".quantity_number").val());
+                    $(".quantity_number").val( q-1).change();
+                    
+                    $(".hidden_size").val($(".max_width").val() + 'x' + $(".max_height").val());
+                    
+                    });
+                
+                $(".number-plus").click(function(){
+                    var q = parseInt($(".quantity_number").val());
+                    $(".quantity_number").val(q +1).change();
+                    
+                    $(".hidden_size").val($(".max_width").val() + 'x' + $(".max_height").val());
+                    
+                    });
+                
+                function closest(arr, closestTo){
+        
+                    var closest = Math.max.apply(null, arr); //Get the highest number in arr in case it match nothing.
+                
+                    for(var i = 0; i < arr.length; i++){ //Loop the array
+                        if(arr[i] >= closestTo && arr[i] < closest) closest = arr[i]; //Check if it's higher than your number, but lower than your closest value
+                    }
+                
+                    return closest; // return the value
+                }        
+            
+            
+        </script>
+</body>
+</html>
+{/exp:channel:entries}

@@ -1,0 +1,29 @@
+{embed="zoo_visitor_example/menu"}
+<h2>Account - Change login</h2>
+{if logged_in AND segment_3 == "success"}
+		<h3>Login updated</h3>
+{if:elseif logged_in}
+	{exp:zoo_visitor:update_form return="zoo_visitor_example/change_login/success"}
+
+		<fieldset>				
+		<p>
+			<label for="EE_email" class="form-label">Your login email:</label>
+			<input type="text" name="username" id="username" class="form-text" value="{username}" />
+		</p>
+		<p>
+			<label for="current_password" class="form-label">In order to change your password, please provide your current password:</label>
+			<input type="text" name="current_password" id="current_password" class="form-text"  />
+		</p>
+	
+		</fieldset>
+		<p>
+	         <input type="submit" value="Submit" class="button" />
+		 </p>
+		 </fieldset>
+
+	{/exp:zoo_visitor:update_form}
+
+{if:else}
+    You are not logged in
+{/if}
+

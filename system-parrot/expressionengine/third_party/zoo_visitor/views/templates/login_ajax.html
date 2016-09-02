@@ -1,0 +1,38 @@
+<html>
+<head>
+	{exp:jquery:script_tag}
+
+	<!--using the jQuery Form plugin http://jquery.malsup.com/form/-->
+	<script src="http://malsup.github.com/jquery.form.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#loginForm').ajaxForm({
+				dataType: 'json',
+				success: function(data) {
+					if (data.success) {
+						alert('You are now logged in. You can add additional actions in the js script.');
+					} else {
+						alert('Failed with the following errors: '+data.errors.login);
+					}
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+{embed="zoo_visitor_example/menu"}
+
+<h2>Account - AJAX login</h2>
+
+{exp:zoo_visitor:login_form id="loginForm" json="yes"}
+{error:login}
+Email: <input id="username" name="username" type="text" />
+Password: <input id="password" name="password" type="password" />
+{if auto_login}
+Remember me? <input class="checkbox" name="auto_login" type="checkbox" value="1" />
+{/if}
+<input name="submit" type="submit" value="Log in" />
+{/exp:zoo_visitor:login_form}
+</body>
+</html>

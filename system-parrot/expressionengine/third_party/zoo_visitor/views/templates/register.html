@@ -1,0 +1,94 @@
+{embed="zoo_visitor_example/menu"}
+{if last_segment == "success"}
+Account created. You can <a href="{path=zoo_visitor_example/login}">login</a> now. Depending on your member activation settings you will receive an email to confirm your registration.
+{if:elseif logged_in}
+You are already registered and logged in. <a href="{path=logout}">Logout</a> or go to your <a href="{path=zoo_visitor_example/profile}">profile</a>.
+{if:else}
+{exp:zoo_visitor:registration_form return='zoo_visitor_example/register/success'}
+
+<h3>Register</h3>
+<fieldset>
+	<h4>Extra fields</h4>
+
+	<p>
+		<label for="member_firstname">{label:member_firstname}:</label>
+		<input type="text" name="member_firstname" id="member_firstname" value="{if member_firstname}{member_firstname}{/if}"/>
+	</p>
+
+	<p>
+		<label for="member_lastname">{label:member_lastname}:</label>
+		<input type="text" name="member_lastname" id="member_lastname" value="{if member_lastname}{member_lastname}{/if}"/>
+	</p>
+
+	<p>
+		<label for="member_gender">{label:member_gender}</label>
+		{options:member_gender}
+		<input type="radio" id="member_gender" name="member_gender" value="{option_value}" {checked} />{option_value}
+		{/options:member_gender}
+	</p>
+
+	<p>
+		<label for="member_address">{label:member_birthday}</label>
+		<input type="text" name="member_birthday" id="member_birthday" value="{member_birthday}" maxlength="23" size="25"/>
+	</p>
+</fieldset>
+<br/>
+<fieldset>
+	<legend>Native member field</legend>
+	<p>Mative member fields like location, url, signature, etc... can be handled by creating a channel field with the same name prefixed with "_member"
+		For example member_signature will sync to the signature field. Custom member fields can be handled in the same way. Just create a channel field prefixed with "member_" and the value
+		will also be saved to the profile.</p>
+
+	<p>
+		<label for="member_signature">Native member signature</label>
+		<input type="text" name="member_signature" id="member_signature" value="{if member_signature}{member_signature}{/if}"/>
+	</p>
+
+</fieldset>
+
+<fieldset>
+	<h4>Login details</h4>
+
+	<p>
+		<label for="username">Email*:</label>
+		<input type="text" name="email" id="email" value="{if email}{email}{/if}"/>
+		<br/>(this will be your login/username if 'use email as username' has been set)
+	</p>
+
+	<p>
+		<label for="password">Password*:</label>
+		<input type="password" name="password" id="password" value="{if password}{password}{/if}"/>
+	</p>
+
+	<p>
+		<label for="password_confirm">Confirm password*:</label>
+		<input type="password" name="password_confirm" id="password_confirm" value="{if password_confirm}{password_confirm}{/if}"/>
+	</p>
+
+	<p>
+		<label for="terms_of_service">Terms of service:</label>
+		<textarea name='terms' rows='4' readonly>All messages posted at this site express the views of the author, and do not necessarily reflect the views of the owners and administrators
+			of this site.By registering at this site you agree not to post any messages that are obscene, vulgar, slanderous, hateful, threatening, or that violate any laws. We will
+			permanently ban all users who do so.We reserve the right to remove, edit, or move any messages for any reason.</textarea>
+	</p>
+
+	<p>
+		<label for="accept_terms">Accept terms of service?*</label>
+		<input type='checkbox' name='accept_terms' value='y' {if accept_terms == "y"}checked="checked"{/if} />
+	</p>
+
+	{if captcha}
+	<p>
+		<label for="captcha">{lang:captcha}*</label>
+		{captcha}<br/>
+		<input type="text" id="captcha" name="captcha" value="" size="20" maxlength="20" style="width:140px;"/>
+	</p>
+	{/if}
+</fieldset>
+<p>
+	<input type="submit" value="Register" class="form-submit"/>
+</p>
+<p>* Required fields</p>
+
+{/exp:zoo_visitor:registration_form}
+{/if}

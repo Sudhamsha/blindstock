@@ -1,0 +1,43 @@
+{if logged_in}
+	{if segment_1 == ''}
+	<a class="settings-cog" href="/dashboard"></a>
+	{/if}
+{/if}
+<ul>
+				
+	<li><a href="/" {if segment_1==""}class="active"{/if}>Home</a></li>
+
+	<li><a {if segment_1=="about-us"}class="active"{/if} href="/about-us">About Us</a></li>
+
+	<li><a {if segment_1=="why-northern-ireland"}class="active"{/if} href="/why-northern-ireland">Why N.Ireland</a></li>
+
+	{if logged_in && group_id == '6'}
+		<li><a {if segment_1=="employers"}class="active"{/if}href="/employers-a-z">Employers</a></li>
+	{if:else}
+		<li><a {if segment_1=="employers"}class="active"{/if}href="/employers">Employers</a></li>
+	{/if}
+
+	{if logged_in && group_id == '7'}
+		<li><a {if segment_1=="candidates"}class="active"{/if}href="/dashboard/search-for-candidates">Candidates</a></li>
+	{if:else}
+		<li><a {if segment_1=="candidates"}class="active"{/if}href="/candidates">Candidates</a></li>
+	{/if}
+	
+
+	<li><a {if segment_1=="events"}class="active"{/if}href="/events">Events</a></li>
+
+	<li class="last">
+		{if logged_in}
+			<a class="login" href="{path=logout}">
+				logout
+				<i class="icon-lock-open-alt"></i>
+			</a>
+		{if:else}
+			<a class="login" href="/login">
+				Login
+				<i class="icon-lock-open-alt"></i>
+			</a>
+		{/if}
+	</li>
+
+</ul>

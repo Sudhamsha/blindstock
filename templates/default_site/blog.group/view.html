@@ -1,0 +1,65 @@
+{exp:channel:entries channel="blog" limit="1" disable="categories|category_fields|member_data"}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->	
+{sn:global_html-header}
+<body class="style-10">
+
+    <!-- LOADER -->
+    <div id="loader-wrapper">
+        <div class="bubbles">
+            <div class="title">loading</div>
+            <span></span>
+            <span id="bubble2"></span>
+            <span id="bubble3"></span>
+        </div>
+    </div>
+
+    <div id="content-block">
+
+        <div class="content-center fixed-header-margin">
+             <!-- HEADER -->
+            {sn:global_header}
+
+            <div class="content-push">
+
+                <div class="breadcrumb-box">
+                    {exp:structure:breadcrumb here_as_title="yes"}
+                </div>
+
+                <div class="information-blocks">
+                    <div class="row">
+                        
+                        <div class="col-md-12">
+                            <div class="blog-landing-box type-1 detail-post">
+                                <div class="blog-entry">
+                                    <div class="content">
+                                        <h1 class="title">{title}</h1>
+                                        <div class="subtitle">Posted {entry_date format="%g:%i, %d %M %Y"} by <a href="javascript:void(0)">By <b>{author}</b></a></div>
+                                        <div class="article-container style-1">
+                                            {blog_description}
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+               
+                <!-- FOOTER -->
+        {sn:global_footer}
+
+        {sn:global_search}
+        
+        {sn:global_cart}
+         
+        {sn:global_html-footer}
+</body>
+</html>
+{/exp:channel:entries}

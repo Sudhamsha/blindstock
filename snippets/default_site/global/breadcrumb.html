@@ -1,0 +1,31 @@
+<div id="breadcrumb_wrap">
+	<div class="crumb_wrap">
+
+		<div class="crumbs"> 	
+			{exp:structure:breadcrumb here_as_title="yes"}
+		</div>
+		
+		<p id="user_name">
+
+			{if logged_in && group_id == '7'}
+				{exp:zoo_visitor:details}
+				{if visitor:main_employer}
+					<span>{screen_name}</span>
+				{if:else}
+					<span><a href="/employers-a-z/detail/{visitor:url_title}" style="color: #fff;
+  text-decoration: none;">{screen_name}</a></span>
+				{/if}
+				{/exp:zoo_visitor:details}
+			{if:elseif logged_in}
+				<span>{screen_name}</span>
+			{/if}
+
+			<a href="{if logged_in}/dashboard/{if:else}/login/{/if}">
+				<img src="/assets/images/settings-icon.png" alt="{screen_name}" height="30" width="30" />
+			</a>
+
+		</p>
+
+	</div>
+
+</div>

@@ -1,0 +1,169 @@
+/* tables */
+#variables h3 a.delete { color: #999; display: none; float: right; margin-right: 20px; }
+#variables td.action,
+#variables th.action { width: 100px; text-align: center; }
+
+#variables td.variable-edit-value { cursor: pointer; padding: 0; vertical-align: top; }
+#variables td.variable-edit-value .variable-value { padding: 7px 8px; max-height: 80px; overflow: hidden;}
+#variables td.variable-edit-value textarea { width: 98%; margin: 1%; }
+#variables td.variable-edit-value input { margin: 0.5% 1% 1% 1%; float: right; }
+#variables td.variable-edit-value:hover { background: transparent url(../images/edit.png) 98% 50% no-repeat }
+#variables td.parent_rtl:hover { background-position: 2% 50%;}
+
+#variables .move { width: 10px; height: 16px; background-image: url(../images/move.png); background-position: center center; background-repeat: no-repeat;	cursor: move;	}
+#variables h3 .move { float: right; margin-top: 0px; margin-right: 20px; display: none; }
+#variables h3 { overflow: hidden; }
+#variables h3 .h3_text { float: left }
+
+#variables td a {
+	text-decoration: underline;
+}
+
+#variables td a:hover {
+	text-decoration: none;
+}
+
+#variables .value-wrapper {
+	position: relative;
+}
+
+#variables .value-wrapper.loader {
+	background: transparent url(/themes/cp_global_images/loader.gif) center center no-repeat;
+}
+
+#variables .fixed-bottom {
+	position: absolute;
+	bottom: 0;
+	height: 40px;
+	width: 100%;
+}
+
+/* introduction */
+#mainContent .introduction { padding: 20px 230px 50px 30px; margin: 0 20px 0 0; font-size: 1.2em; background: url(../images/republic-variables.png) no-repeat right 10px; }
+#mainContent .introduction h3 { margin: 10px 0 30px 0; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6); }
+#mainContent .introduction h4 { margin: 50px 0 20px 0; font-size: 1.1em; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6); }
+#mainContent .introduction li { list-style-type: disc; padding-right: 10px; margin-left: 0px; margin-bottom: 20px; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4); }
+#mainContent .introduction p { text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4); }
+
+/* accordions */
+#mainContent #variables .editAccordion { margin-bottom: 15px; }
+#mainContent #variables .editAccordion h3 { text-shadow: 0 -1px 0 rgba(0,0,0,0.2); }
+#mainContent #variables .editAccordion h3 .admin_only { float: right; margin-right: 20px; font-size: 10px; color: #eee; text-shadow: 0 -1px 0 rgba(0,0,0,0.2); }
+#mainContent #variables .editAccordion h3.collapsed { text-shadow: 0 1px 0 rgba(255,255,255,0.2); }
+#mainContent #variables .editAccordion h3.collapsed .admin_only { color: rgba(0,0,0,0.2); text-shadow: 0 1px 0 rgba(255,255,255,0.2); }
+
+#mainContent #variables .editAccordion.empty { background-position: 0 -540px; }
+#mainContent #variables .editAccordion.empty h3 { cursor: help !important; }
+
+#mainContent #variables td.default_lang  { width: 140px; text-align: center; }
+#mainContent #variables td.delete_button { width: 60px; }
+
+#mainContent #variables .variable-value.rtl { text-align: right; }
+
+/* general */
+div.failure { border-left: 10px solid #CE0000; padding: 10px 15px 2px 15px; margin-bottom: 20px; font-weight: bold; }
+
+.variables-placeholder { height: 100px; border: 1px dotted #666; }
+.language-placeholder { background-color: #999; height: 40px; }
+
+/* expanding text areas */
+.expandingArea textarea,
+.expandingArea pre {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+}
+
+.expandingArea {
+	position: relative;
+	border: 1px solid #8195A0;
+	background: #fff;
+	border-radius: 3px;
+}
+
+.expandingArea > textarea,
+.expandingArea > pre {
+	padding: 4px;
+	background: transparent;
+	font-size: 13px;
+	line-height: 17px;
+	/* Make the text soft-wrap */
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	min-height: 55px;
+}
+
+.expandingArea > textarea {
+	/* The border-box box model is used to allow
+	 * padding whilst still keeping the overall width
+	 * at exactly that of the containing element. */
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	/* This height is used when JS is disabled */
+	height: 100px;
+}
+
+.expandingArea > pre {
+	display: none;
+}
+
+.expandingArea.active {
+ border-radius: 4px;
+}
+
+.expandingArea.active > textarea {
+	/* Hide any scrollbars */
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	/* Remove WebKit user-resize widget */
+	resize: none;
+}
+
+.expandingArea.active > textarea:focus {
+	background-color: #FFFFF5;
+	border: 1px solid #8195A0;
+	padding: 3px;
+
+}
+
+.expandingArea.active > pre {
+	display: block;
+	/* Hide the text; just using it for sizing */
+	visibility: hidden;
+}
+
+.site_republic_variable,
+.duplicate_republic_variable {
+	display: block; float: right; text-transform: uppercase; font-size: 90%; color: #ccc; color: rgba(0,0,0,0.3); padding-left: 2px;
+}
+
+.rv_exist label,
+.duplicate_republic_variable  {
+	color: #999;
+}
+
+.duplicate_republic_variable {
+	padding-left: 20px;
+}
+
+.default_value_only {
+	color: #AAAAAA;
+}
+
+.cancel-edit-mode {
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+label.readonly,
+input.readonly,
+input.readonly:focus {
+	color: #999;
+}

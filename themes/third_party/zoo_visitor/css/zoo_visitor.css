@@ -1,0 +1,128 @@
+#troubleshooting .negative, #troubleshooting .positive, #installation .negative, #installation .positive{
+	background-position: 0 6px;
+	padding-left: 25px;
+	padding-bottom: 10px;
+	padding-top: 6px;
+	background-repeat: no-repeat;
+	display: block;
+}
+#troubleshooting .negative{
+	background-image: url(../img/90.png);
+}
+#troubleshooting .positive{
+	background-image: url(../img/58.png);
+}
+#installation .negative{
+	background-image: url(../img/146.png);
+}
+#installation .positive{
+	background-image: url(../img/58.png);
+}
+
+#overview h3{
+	text-shadow: 2px 2px 1px #fff;
+}
+#overview h3.installation, #overview h3.settings, #overview h3.troubleshooting, #overview h3.tags{
+	padding-left: 22px;
+	padding-bottom: 10px;
+	padding-top: 2px;
+	background-position: 0 0px;
+	background-repeat: no-repeat;
+}
+#overview h3.installation{
+	background-image: url(../img/204.png);
+}
+#overview h3.settings{
+	background-image: url(../img/145.png);
+}
+#overview h3.troubleshooting{
+	background-image: url(../img/146.png);
+}
+#overview h3.tags{
+	background-image: url(../img/217.png);
+}
+#zoo_visitor_installed{
+	height:100px;
+}
+#zoo_visitor_installed .content{
+	text-align: center;
+	width: 360px;
+	background-color: #78b219;
+	color:white;
+	display:block;
+	padding:10px;
+	margin: 0 auto;
+	position: relative;
+	top:50px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px #486715;
+}
+#zoo_visitor_installed .zoo_logo{
+z-index: 1;
+	position: absolute;
+	margin: 0 auto;
+	margin-left:55%;
+	background-repeat: no-repeat;
+	background-image: url(../img/zoo_logo.png);
+	width:71px;
+	height:93px;
+	
+}
+.zoo_visitor_ft_left{
+	width:350px; 
+	float:left; 
+	padding:20px; 
+	padding-right:40px; 
+	border-right:1px solid #D1D5DE;
+}
+
+.zoo_visitor_ft_right{
+	width:250px; 
+	padding:20px; 
+	float:left;
+	margin-left:20px;
+}
+
+.zoo_visitor_ft_right a{
+	display: block;
+	height: 20px;
+	padding-left: 22px;
+	padding-bottom:6px;
+	padding-top:6px;
+	text-decoration: none!important;
+	padding-top: 2px;
+	background-repeat: no-repeat;
+}
+
+.zoo_visitor_ft_right a.email{
+	background-position: 0 3px;
+	background-image: url(../img/76.png);
+}
+.zoo_visitor_ft_right a.login{
+	background-image: url(../img/247.png);
+}
+.zoo_visitor_ft_right a.delete{
+	background-image: url(../img/53.png);
+}
+.zoo_visitor_ft_left H3, .zoo_visitor_ft_right H3{
+	margin:0;
+	padding-bottom:6px;
+}
+.zoo_visitor_ft_left label{
+	font-weight: bold !important;
+	padding-top:6px;
+	padding-bottom:2px;
+}
+.publish_zoo_visitor .notice{
+	margin-right: 50px;
+	margin-left: 20px;
+	border-color: #e3e3e3;
+	border-width: 1px;
+	border-style: solid;
+	text-align: center;
+	background-color: #fdf3ea;
+	clear:left;
+	display: block;
+	padding: 6px;
+}
